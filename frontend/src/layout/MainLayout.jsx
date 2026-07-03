@@ -1,10 +1,18 @@
 import { Outlet } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SideBar from '../components/SideBar';
 
 const MainLayout = () => {
   const [activeTab, setActiveTab] = useState(null)
+  
+  useEffect(()=>{
+    if(activeTab) document.body.style.overflow = 'hidden'
+    else document.body.style.overflow = 'auto'
+    return ()=> {
+      document.body.style.overflow = 'auto'
+    }
+  }, [activeTab])
   
   return (
     <div>
