@@ -17,7 +17,7 @@ const Tbars = () => {
         </h2>
       </div>
       <div className="w-full h-auto">
-        <div className="w-full h-[48vh] flex items-center justify-between px-[2.5em] ">
+        <div className="w-full h-[48vh] flex items-center justify-between px-[2.5rem] ">
           <h1 className="text-[1.1em] uppercase font-['SaaSeries']">T-Bar</h1>
           <p className="w-[36%] text-[16.6px] font-['ArboriaBook'] leading-6 text-justify">
             Inspired by the iconic jewellery clasp, the T-Bar collection

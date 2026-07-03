@@ -46,7 +46,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         >
           Contact Us
         </div>
-        <NavLink onClick={() => setActiveTab(null)} to={"/account"}>
+        <NavLink onClick={() => setActiveTab(null)} to={"/account/login"}>
           Account
         </NavLink>
         <NavLink onClick={() => setActiveTab(null)} to={"/wishlist"}>
