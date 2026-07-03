@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import Navbar from '../components/ui/Navbar1'
+import Navbar from '../components/ui/Navbar'
 import { useEffect, useState } from 'react';
 import SideBar from '../components/SideBar';
 import { motion, AnimatePresence } from "motion/react";
