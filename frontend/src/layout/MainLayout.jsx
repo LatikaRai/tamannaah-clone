@@ -11,9 +11,10 @@ const MainLayout = () => {
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
       
-      {activeTab && (
+      {activeTab  && (
         <>
           <div className='fixed inset-0 bg-black/40 z-50'
+          // when clicking on other than the side bars, the sidebar should disappear
           onClick={()=>setActiveTab(null)}>
 
           </div>

@@ -7,7 +7,7 @@ const AllJewellery = () => {
 
     const [viewImages, setViewImages] = useState('four')
   return (
-    <div className='w-full px-[2.2rem]'>
+    <div className='w-full px-[2.5em]'>
         <div className='w-full h-[30vh]'></div>
         <div className='w-full flex items-center justify-between py-[0.5em] text-[0.9rem]'>
             <div className='flex items-center gap-2'>
