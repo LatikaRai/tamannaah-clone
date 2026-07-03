@@ -24,7 +24,7 @@ const ContactTab = ({activeTab,setActiveTab}) => {
       {btnClicked ? (
         <div className="w-full h-screen pr-[1.3rem] text-[0.9rem] overflow-y-auto">
           <div className="w-full flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
-            <i onClick={()=> setBtnClicked(false)} className="ri-arrow-left-s-line"></i>
+            <i onClick={()=> setBtnClicked(false)} className="ri-arrow-left-s-line text-[1rem]"></i>
             <h1>Make an Inquiry</h1>
             <i onClick={()=> setActiveTab('')} className="ri-close-large-line"></i>
           </div>

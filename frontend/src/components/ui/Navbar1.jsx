@@ -1,5 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom"
-import Logo from "./ui/Logo"
+import Logo from "./Logo"
 
 
 const Navbar = ({ activeTab, setActiveTab }) => {
@@ -35,10 +35,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             onClick={()=>setActiveTab("contact")}
             className={activeTab === "contact" ? "text-black" : navColor}
             >Contact Us</div>
-            <div 
-            onClick={()=>setActiveTab("account")}
-            className={activeTab === "account" ? "text-black" : navColor}
-            >Account</div>
+            <NavLink to={'/account'}>Account</NavLink>
             <div 
             onClick={()=>setActiveTab("wishlist")}
             className={activeTab === "wishlist" ? "text-black" : navColor}

@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/ui/Navbar1'
 import { useEffect, useState } from 'react';
 import SideBar from '../components/SideBar';
+import { motion, AnimatePresence } from "motion/react";
 
 const MainLayout = () => {
   const [activeTab, setActiveTab] = useState(null)
@@ -18,9 +19,9 @@ const MainLayout = () => {
     <div>
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab}/>
 
-      
+      <AnimatePresence>
       {activeTab  && (
-        <>
+        <motion.div>
           <div className='fixed inset-0 bg-black/40 z-50'
           // when clicking on other than the side bars, the sidebar should disappear
           onClick={()=>setActiveTab(null)}>
@@ -31,8 +32,9 @@ const MainLayout = () => {
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           />
-        </>
+        </motion.div>
       )}
+      </AnimatePresence>
 
       <Outlet/>
     </div>
