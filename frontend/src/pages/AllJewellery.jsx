@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import data from '../../../backend/db.json'
 import ProductCard from '../components/ui/ProductCard'
+import { useSelector } from 'react-redux'
 
 const AllJewellery = () => {
-    const allProducts = [...data.products]
+  const {products} = useSelector(state => state.productReducer)
+    const allProducts = [...products]
 
     const [viewImages, setViewImages] = useState('four')
   return (

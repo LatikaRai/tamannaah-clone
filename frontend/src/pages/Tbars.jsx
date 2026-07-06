@@ -1,10 +1,11 @@
-import data from "../../../backend/db.json";
+import { useSelector } from "react-redux";
 import tbarDesktop from "../assets/images/tbar-desktop.jpg";
 import ProductCard from "../components/ui/ProductCard";
 
 const Tbars = () => {
 
-  const tBarProducts = data.products.filter((product) =>
+  const {products} = useSelector(state => state.productReducer)
+  const tBarProducts = products.filter((product) =>
     product.title.toLowerCase().includes("t-bar"),
   );
 

@@ -1,11 +1,13 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
-const Navbar = ({ activeTab, setActiveTab }) => {
+const Navbar1 = ({ activeTab, setActiveTab }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
-  const isLightBg = ["/collections/all-jewellery"].includes(location.pathname);
+  const isLightBg = ["/collections/all-jewellery",
+    
+  ].includes(location.pathname);
 
   const navColor = isLightBg ? "text-black" : "text-white";
 
@@ -60,4 +62,4 @@ const Navbar = ({ activeTab, setActiveTab }) => {
   );
 };
 
-export default Navbar;
+export default Navbar1;

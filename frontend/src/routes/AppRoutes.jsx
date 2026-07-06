@@ -13,6 +13,7 @@ import Tbars from "../pages/Tbars"
 import ProductDetails from "../pages/ProductDetails"
 import AllJewellery from "../pages/AllJewellery"
 import Register from "../components/Register"
+import MostPopular from "../pages/MostPopular"
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
 
         <Route path="/shop" element={<Shop/>}/>
         <Route path="/shop/t-bars" element={<Tbars/>}/>
+        <Route path="/shop/trending" element={<MostPopular/>}/>
 
 
         <Route path="/about-us" element={<AboutUs/>}/>
