@@ -7,7 +7,8 @@ const Navbar = ({activeTab,setActiveTab}) => {
 
     const navbarOneRoutes = [
         '/',
-        '/shop/t-bars'
+        '/shop/t-bars',
+        '/collections/all-jewellery'
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)

@@ -12,6 +12,7 @@ import Collections from "../pages/Collections"
 import Tbars from "../pages/Tbars"
 import ProductDetails from "../pages/ProductDetails"
 import AllJewellery from "../pages/AllJewellery"
+import Register from "../components/Register"
 
 const AppRoutes = () => {
   return (
@@ -27,6 +28,7 @@ const AppRoutes = () => {
         <Route path="/about-us" element={<AboutUs/>}/>
         <Route path="/search" element={<Search/>}/>
         <Route path="/account/login" element={<Account/>}/>
+        <Route path="/account/register" element={<Register/>}/>
         <Route path="/wishlist" element={<Wishlist/>}/>
         <Route path="/cart" element={<Cart/>}/>
         

@@ -42,12 +42,16 @@ const ContactTab = ({activeTab,setActiveTab}) => {
                 <input
                   {...register("fullName", {
                     required: "This field is required",
+                    pattern: {
+                      value: /^[A-Za-z ]+$/,
+                      message: "Please enter a valid name",
+                    },
                   })}
                   type="text"
                   placeholder=" "
                   className={`peer border-b w-full pb-[0.5rem] outline-none ${errors.fullName ? "border-red-500" : "border-black"}`}
                 />
-                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 peer-focus:top-0 pb-[1.6rem] text-gray-500">
+                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 pb-[1.6rem] text-gray-500 peer-focus:top-0 peer-focus:-translate-y-full peer-focus:pb-0 peer-focus:text-[0.8rem] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:-translate-y-full peer-[:not(:placeholder-shown)]:pb-0 peer-[:not(:placeholder-shown)]:text-[0.8rem]">
                   Full Name
                 </label>
                 {errors.fullName && (
@@ -69,7 +73,7 @@ const ContactTab = ({activeTab,setActiveTab}) => {
                   type="email"
                   className={`peer border-b w-full pb-[0.5rem] outline-none ${errors.email ? "border-red-500" : "border-black"}`}
                 />
-                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 peer-focus:top-0 pb-[1.6rem] text-gray-500">
+                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 pb-[1.6rem] text-gray-500 peer-focus:top-0 peer-focus:-translate-y-full peer-focus:pb-0 peer-focus:text-[0.8rem] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:-translate-y-full peer-[:not(:placeholder-shown)]:pb-0 peer-[:not(:placeholder-shown)]:text-[0.8rem]">
                   Email Address
                 </label>
                 {errors.email && (
@@ -91,7 +95,7 @@ const ContactTab = ({activeTab,setActiveTab}) => {
                   type="tel"
                   className={`peer border-b w-full pb-[0.5rem] outline-none ${errors.phone ? "border-red-500" : "border-black"}`}
                 />
-                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 peer-focus:top-0 pb-[1.6rem] text-gray-500">
+                <label className="absolute transition-all top-1/2 -z-1 left-0 -translate-y-1/2 pb-[1.6rem] text-gray-500 peer-focus:top-0 peer-focus:-translate-y-full peer-focus:pb-0 peer-focus:text-[0.8rem] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:-translate-y-full peer-[:not(:placeholder-shown)]:pb-0 peer-[:not(:placeholder-shown)]:text-[0.8rem]">
                   Phone Number
                 </label>
                 {errors.phone && (

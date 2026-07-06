@@ -35,7 +35,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
       </div>
       <Link
         to={"/"}
-        className="w-[30%] text-5xl absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3.4rem] flex items-center justify-center"
+        className="w-[30%] text-[2.7rem] tracking-wider font-medium absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3.4rem] flex items-center justify-center"
       >
         <Logo />
       </Link>

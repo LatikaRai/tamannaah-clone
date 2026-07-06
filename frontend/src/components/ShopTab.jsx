@@ -43,15 +43,15 @@ const ShopTab = () => {
             duration: 0.5,
             ease: [0.22, 1, 0.36, 1]
             }}
-            className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] bg-white">
+            className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
-                    <NavLink to={'/collections/new'}>New In</NavLink>
-                    <NavLink to={'/collections/t-bars'}>T-Bars</NavLink>
-                    <NavLink to={'/collections/neclace-pendants'}>Necklace & Pendants</NavLink>
-                    <NavLink to={'/collections/earrings'}>Earrings</NavLink>
-                    <NavLink to={'/collections/rings'}>Rings</NavLink>
-                    <NavLink to={'/collections/bracelets'}>Bracelets</NavLink>
-                    <NavLink to={'/collections/all-jewellery'}>All Jewelry</NavLink>
+                    <NavLink to={'/collections/new'} className='text-gray-400 hover:text-black'>New In</NavLink>
+                    <NavLink to={'/collections/t-bars'} className='text-gray-400 hover:text-black'>T-Bars</NavLink>
+                    <NavLink to={'/collections/neclace-pendants'} className='text-gray-400 hover:text-black'>Necklace & Pendants</NavLink>
+                    <NavLink to={'/collections/earrings'} className='text-gray-400 hover:text-black'>Earrings</NavLink>
+                    <NavLink to={'/collections/rings'} className='text-gray-400 hover:text-black'>Rings</NavLink>
+                    <NavLink to={'/collections/bracelets'} className='text-gray-400 hover:text-black'>Bracelets</NavLink>
+                    <NavLink to={'/collections/all-jewellery'} className='text-gray-400 hover:text-black'>All Jewelry</NavLink>
                 </div>
             </motion.div>
         )}

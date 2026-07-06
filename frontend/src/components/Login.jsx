@@ -5,7 +5,12 @@ const Login = () => {
   const {
     register,
     formState: { errors },
-  } = useForm({ mode: "onBlur" });
+  } = useForm();
+
+  const CreatAccountHandler = () => {
+    
+  }
+
   return (
     <div className="h-[92vh] mt-[8vh] flex items-center">
       <div className="w-1/2 h-full">
