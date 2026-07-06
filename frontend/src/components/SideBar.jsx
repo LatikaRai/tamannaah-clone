@@ -19,7 +19,7 @@ const SideBar = ({activeTab, setActiveTab}) => {
         ease: [0.22, 1, 0.36, 1]
         }}
       exit={{opacity:1, x:"-300%"}}
-      className='absolute h-screen w-1/3 bg-white z-100 text-gray-800 py-[1.4rem] px-[2.3rem] font-["ArboriaBook"]'
+      className='absolute h-screen w-1/3 top-0 bg-white z-100 text-gray-800 py-[1.4rem] px-[2.3rem] font-["ArboriaBook"]'
       >
         <div className="flex gap-[2.6rem] cursor-pointer text-[0.9rem]">
             <div
