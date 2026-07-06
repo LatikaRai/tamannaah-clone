@@ -11,9 +11,10 @@ const Tbars = () => {
 
   return (
     <div>
-      <div className='w-full h-screen font-["ArboriaBook"]'>
-        <img className="w-full h-full object-cover" src={tbarDesktop} alt="" />
-        <h2 className="uppercase text-white text-[1.1rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div
+      style={{backgroundImage: `url(${tbarDesktop})`}}
+       className='w-full h-screen font-["ArboriaBook"] flex items-center justify-center bg-cover bg-center'>
+        <h2 className="uppercase text-white text-[1.1rem] text-shadow-xs font-thin text-center">
           T-bar collection
         </h2>
       </div>

@@ -1,23 +1,29 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
 import * as motion from "motion/react-client";
 import jewellerryMenu from "../assets/images/jewellery-menu.jpg"
 
-const ShopTab = () => {
+const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
 
     const [openCategory, setOpenCategory] = useState(null)
+
+    const handleNavigate = (path) => {
+        setPendingRoute(path)
+        setActiveTab(null)
+    }
 
   return (
     <div className="text-[1.2rem]">
         {/* left menu */}
         <div className="w-[20vw] z-10 flex flex-col mt-[5.2rem] gap-[0.8rem] cursor-pointer">
-            <NavLink
+            <div
+            onClick={()=>handleNavigate('/shop/t-bars')}
             className='text-gray-400 hover:text-black'
-            to={'/shop/t-bars'}>T-Bars</NavLink>
+            >T-Bars</div>
 
-            <NavLink 
+            <div 
+            onClick={()=>handleNavigate('/shop/trending')}
             className='text-gray-400 hover:text-black'
-            to={'/shop/trending'}>Most Popular</NavLink>
+            to={'/shop/trending'}>Most Popular</div>
 
             <div 
             className={`cursor-pointer ${openCategory === "jewellery" ? "text-black" : "text-gray-400 hover:text-black"}`}
@@ -25,13 +31,15 @@ const ShopTab = () => {
                 setOpenCategory("jewellery")
                 }} >Jewelry</div>
 
-            <NavLink 
+            <div 
+            onClick={()=>handleNavigate('/shop/high-jewelry')}
             className='text-gray-400 hover:text-black'
-            to={'/shop/high-jewelry'}>High Jewelry</NavLink>
+            >High Jewelry</div>
 
-            <NavLink 
+            <div 
+            onClick={()=>handleNavigate('/shop/tamannah-favourite')}
             className='text-gray-400 hover:text-black'
-            to={'/shop/tamannah-favourite'}>Tamannaah's Favourite</NavLink>
+            >Tamannaah's Favourite</div>
         </div>
 
         {/* middle menu */}
@@ -45,13 +53,13 @@ const ShopTab = () => {
             }}
             className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
-                    <NavLink to={'/collections/new'} className='text-gray-400 hover:text-black'>New In</NavLink>
-                    <NavLink to={'/collections/t-bars'} className='text-gray-400 hover:text-black'>T-Bars</NavLink>
-                    <NavLink to={'/collections/neclace-pendants'} className='text-gray-400 hover:text-black'>Necklace & Pendants</NavLink>
-                    <NavLink to={'/collections/earrings'} className='text-gray-400 hover:text-black'>Earrings</NavLink>
-                    <NavLink to={'/collections/rings'} className='text-gray-400 hover:text-black'>Rings</NavLink>
-                    <NavLink to={'/collections/bracelets'} className='text-gray-400 hover:text-black'>Bracelets</NavLink>
-                    <NavLink to={'/collections/all-jewellery'} className='text-gray-400 hover:text-black'>All Jewelry</NavLink>
+                    <div to={'/collections/new'} className='text-gray-400 hover:text-black'>New In</div>
+                    <div to={'/collections/t-bars'} className='text-gray-400 hover:text-black'>T-Bars</div>
+                    <div to={'/collections/neclace-pendants'} className='text-gray-400 hover:text-black'>Necklace & Pendants</div>
+                    <div to={'/collections/earrings'} className='text-gray-400 hover:text-black'>Earrings</div>
+                    <div to={'/collections/rings'} className='text-gray-400 hover:text-black'>Rings</div>
+                    <div to={'/collections/bracelets'} className='text-gray-400 hover:text-black'>Bracelets</div>
+                    <div to={'/collections/all-jewellery'} className='text-gray-400 hover:text-black'>All Jewelry</div>
                 </div>
             </motion.div>
         )}

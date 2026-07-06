@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import ContactTab from "./ContactTab";
 import Account from "../pages/Account";
 
-const SideBar = ({activeTab, setActiveTab}) => {
+const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
   return (
     <div>
     {/* left sidebar */}
@@ -36,7 +36,7 @@ const SideBar = ({activeTab, setActiveTab}) => {
             >Search</div>
         </div>
         <div>
-            {activeTab === 'shop' && <ShopTab/>}
+            {activeTab === 'shop' && <ShopTab activeTab={activeTab} setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
             {activeTab === 'about' && <AboutTab/>}
             {activeTab === 'search' && <SearchTab/>}
         </div>

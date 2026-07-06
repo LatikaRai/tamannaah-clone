@@ -10,7 +10,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/shop/t-bars',
         '/shop/trending',
         '/collections/all-jewellery',
-        
+        '/shop/tamannah-favourite'
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)

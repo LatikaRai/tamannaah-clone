@@ -5,7 +5,7 @@ const Navbar1 = ({ activeTab, setActiveTab }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
-  const isLightBg = ["/collections/all-jewellery",
+  const isLightBg = ["/collections/all-jewellery","/shop/trending",
     
   ].includes(location.pathname);
 

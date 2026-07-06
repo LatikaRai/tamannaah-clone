@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "../pages/HomePage"
 import MainLayout from "../layout/MainLayout"
-import Shop from "../components/Shop"
 import AboutUs from "../components/AboutUs"
 import Search from "../components/Search"
 import ContactUs from "../pages/ContactUs"
@@ -13,6 +12,8 @@ import Tbars from "../pages/Tbars"
 import ProductDetails from "../pages/ProductDetails"
 import AllJewellery from "../pages/AllJewellery"
 import Register from "../components/Register"
+import TamanaahFavs from "../pages/TamanaahFavs"
+import ShopTab from "../components/ShopTab"
 import MostPopular from "../pages/MostPopular"
 
 const AppRoutes = () => {
@@ -22,9 +23,10 @@ const AppRoutes = () => {
       <Route element={<MainLayout/>}>
         <Route path="/" element={<HomePage/>}/>
 
-        <Route path="/shop" element={<Shop/>}/>
+        <Route path="/shop" element={<ShopTab/>}/>
         <Route path="/shop/t-bars" element={<Tbars/>}/>
         <Route path="/shop/trending" element={<MostPopular/>}/>
+        <Route path="/shop/tamannah-favourite" element={<TamanaahFavs/>}/>
 
 
         <Route path="/about-us" element={<AboutUs/>}/>
