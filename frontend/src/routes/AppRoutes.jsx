@@ -15,6 +15,7 @@ import Register from "../components/Register"
 import TamanaahFavs from "../pages/TamanaahFavs"
 import ShopTab from "../components/ShopTab"
 import MostPopular from "../pages/MostPopular"
+import HighJewelry from "../pages/HighJewelry"
 
 const AppRoutes = () => {
   return (
@@ -38,6 +39,7 @@ const AppRoutes = () => {
         
         <Route path="/collections" element={<Collections/>}/>
         <Route path="/collections/all-jewellery" element={<AllJewellery/>}/>
+        <Route path="/collections/high-jewelry" element={<HighJewelry/>}/>
 
         <Route path="/product/:slug" element={<ProductDetails/>}/>
 

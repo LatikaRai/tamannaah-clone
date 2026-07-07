@@ -94,7 +94,7 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
             }}
             className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
-                    <div to={'/collections/new'} className='text-gray-400 hover:text-black'>All High Jewelry</div>
+                    <div onClick={()=>handleNavigate('/collections/high-jewelry')} className='text-gray-400 cursor-pointer hover:text-black'>All High Jewelry</div>
                 </div>
             </motion.div>
         )}

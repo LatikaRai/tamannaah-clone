@@ -10,6 +10,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/shop/t-bars',
         '/shop/trending',
         '/collections/all-jewellery',
+        '/collections/high-jewelry',
         '/shop/tamannah-favourite'
     ]
 

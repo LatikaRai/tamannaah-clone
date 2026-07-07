@@ -4,20 +4,20 @@ import ProductCard from "./ProductCard";
 const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,products}) => {
     const {pathname} = useLocation()
 
-    const heroTitlePositionChange = ['/shop/tamannah-favourite'].includes(pathname)
+    const heroTitlePositionChange = ['/shop/tamannah-favourite','/collections/high-jewelry'].includes(pathname)
 
   return (
     <div>
       <div
       style={{backgroundImage: `url(${heroImage})`}}
        className={`w-full h-screen font-["ArboriaBook"] flex justify-center bg-cover bg-center ${heroTitlePositionChange ? 'items-end' : 'items-center'}`}>
-        <h2 className="uppercase text-white text-[1.1rem] py-[1.3rem] text-shadow-sm font-thin text-center">
+        <h2 className={`uppercase text-white py-[1.3rem] text-shadow-sm text-center  ${heroTitlePositionChange ? 'font-semibold text-[1.05rem] tracking-wide' : 'font-thin text-[1.1rem]'}`}>
           {heroTitle}
         </h2>
       </div>
       <div className="w-full h-auto">
         <div className='w-full h-[48vh] flex items-center justify-between px-[2.5rem]'>
-          <h1 className="text-[1.1em] uppercase font-['SaaSeries']">{collectionTitle}</h1>
+          <h1 className="text-[1.05em] tracking-tighter uppercase font-['SaaSeries']">{collectionTitle}</h1>
           <p className="w-[36%] text-[16.6px] font-['ArboriaBook'] leading-6 text-justify">
             {description}
           </p>
