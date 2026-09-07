@@ -2,6 +2,7 @@ import { useState } from "react"
 import * as motion from "motion/react-client";
 import jewellerryMenu from "../assets/images/jewellery-menu.jpg"
 import highJewelry from "../assets/images/high-jewelry.jpg";
+import { useNavigate } from "react-router-dom";
 
 const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
 
@@ -11,6 +12,8 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
         setPendingRoute(path)
         setActiveTab(null)
     }
+
+    const navigate = useNavigate()
 
   return (
     <div className="text-[1.2rem]">
@@ -59,7 +62,7 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
             className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
                     <div to={'/collections/new'} className='text-gray-400 hover:text-black'>New In</div>
-                    <div to={'/collections/t-bars'} className='text-gray-400 hover:text-black'>T-Bars</div>
+                    <div onClick={()=>navigate('/collections/t-bars')} className='text-gray-400 hover:text-black cursor-pointer'>T-Bars</div>
                     <div to={'/collections/neclace-pendants'} className='text-gray-400 hover:text-black'>Necklace & Pendants</div>
                     <div to={'/collections/earrings'} className='text-gray-400 hover:text-black'>Earrings</div>
                     <div to={'/collections/rings'} className='text-gray-400 hover:text-black'>Rings</div>

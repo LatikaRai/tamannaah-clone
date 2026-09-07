@@ -11,7 +11,9 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/shop/trending',
         '/collections/all-jewellery',
         '/collections/high-jewelry',
-        '/shop/tamannah-favourite'
+        '/collections/t-bars',
+        '/shop/tamannah-favourite',
+        '/about-us/meet-tamannaah'
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)

@@ -1,4 +1,3 @@
-import { use } from "react";
 import highJewelryImg from "../assets/images/high-jewelry-img.jpg";
 import CollectionLayout from '../components/ui/CollectionLayout'
 import { useSelector } from "react-redux";

@@ -16,6 +16,7 @@ import TamanaahFavs from "../pages/TamanaahFavs"
 import ShopTab from "../components/ShopTab"
 import MostPopular from "../pages/MostPopular"
 import HighJewelry from "../pages/HighJewelry"
+import MeetTamannah from "../pages/MeetTamannah"
 
 const AppRoutes = () => {
   return (
@@ -24,14 +25,19 @@ const AppRoutes = () => {
       <Route element={<MainLayout/>}>
         <Route path="/" element={<HomePage/>}/>
 
+        {/* shop tab */}
         <Route path="/shop" element={<ShopTab/>}/>
         <Route path="/shop/t-bars" element={<Tbars/>}/>
         <Route path="/shop/trending" element={<MostPopular/>}/>
         <Route path="/shop/tamannah-favourite" element={<TamanaahFavs/>}/>
 
+        {/* collections */}
+        <Route path="/collections/t-bars" element={<Tbars/>}/>
+
+
         {/* about tab */}
         <Route path="/about-us" element={<AboutUs/>}/>
-        <Route path="/about-us/meet-tamannaah" />
+        <Route path="/about-us/meet-tamannaah" element={<MeetTamannah/>} />
 
         <Route path="/search" element={<Search/>}/>
         <Route path="/account/login" element={<Account/>}/>
