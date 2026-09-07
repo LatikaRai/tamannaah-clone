@@ -17,6 +17,12 @@ import ShopTab from "../components/ShopTab"
 import MostPopular from "../pages/MostPopular"
 import HighJewelry from "../pages/HighJewelry"
 import MeetTamannah from "../pages/MeetTamannah"
+import EarringCollections from "../pages/EarringCollections"
+import RingCollections from "../pages/RingCollections"
+import BraceletCollections from "../pages/BraceletCollections"
+import AllCollections from "../pages/AllCollections"
+import NeclaceCollections from "../pages/NecklaceCollections"
+import NewCollections from "../pages/NewCollections"
 
 const AppRoutes = () => {
   return (
@@ -33,6 +39,12 @@ const AppRoutes = () => {
 
         {/* collections */}
         <Route path="/collections/t-bars" element={<Tbars/>}/>
+        <Route path="/collections/neclace-pendants" element={<NeclaceCollections />}/>
+        <Route path="/collections/earrings" element={<EarringCollections />}/>
+        <Route path="/collections/rings" element={<RingCollections />}/>
+        <Route path="/collections/bracelets" element={<BraceletCollections />}/>
+        <Route path="/collections/all-jewellery" element={<AllCollections />}/>
+        <Route path="/collections/new" element={<NewCollections />}/>
 
 
         {/* about tab */}

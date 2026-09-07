@@ -61,13 +61,13 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
             }}
             className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
-                    <div to={'/collections/new'} className='text-gray-400 hover:text-black'>New In</div>
+                    <div onClick={()=>navigate('/collections/new')} className='text-gray-400 hover:text-black cursor-pointer'>New In</div>
                     <div onClick={()=>navigate('/collections/t-bars')} className='text-gray-400 hover:text-black cursor-pointer'>T-Bars</div>
-                    <div to={'/collections/neclace-pendants'} className='text-gray-400 hover:text-black'>Necklace & Pendants</div>
-                    <div to={'/collections/earrings'} className='text-gray-400 hover:text-black'>Earrings</div>
-                    <div to={'/collections/rings'} className='text-gray-400 hover:text-black'>Rings</div>
-                    <div to={'/collections/bracelets'} className='text-gray-400 hover:text-black'>Bracelets</div>
-                    <div to={'/collections/all-jewellery'} className='text-gray-400 hover:text-black'>All Jewelry</div>
+                    <div onClick={()=>navigate('/collections/neclace-pendants')} className='text-gray-400 hover:text-black cursor-pointer'>Necklace & Pendants</div>
+                    <div onClick={()=>navigate('/collections/earrings')} className='text-gray-400 hover:text-black cursor-pointer'>Earrings</div>
+                    <div onClick={()=>navigate('/collections/rings')} className='text-gray-400 hover:text-black cursor-pointer'>Rings</div>
+                    <div onClick={()=>navigate('/collections/bracelets')} className='text-gray-400 hover:text-black cursor-pointer'>Bracelets</div>
+                    <div onClick={()=>navigate('/collections/all-jewellery')} className='text-gray-400 hover:text-black cursor-pointer'>All Jewelry</div>
                 </div>
             </motion.div>
         )}

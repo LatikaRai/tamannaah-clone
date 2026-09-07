@@ -12,6 +12,12 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/collections/all-jewellery',
         '/collections/high-jewelry',
         '/collections/t-bars',
+        '/collections/neclace-pendants',
+        '/collections/earrings',
+        '/collections/rings',
+        '/collections/bracelets',
+        '/collections/all-jewellery',
+        '/collections/new',
         '/shop/tamannah-favourite',
         '/about-us/meet-tamannaah'
     ]
