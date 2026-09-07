@@ -137,7 +137,7 @@ const ContactTab = ({activeTab,setActiveTab}) => {
                     type="radio"
                     id="email"
                     name="contact"
-                    checked
+                    
                     className="accent-gray-700"
                   />
                   <label htmlFor="email" className="pr-[1.8rem]">

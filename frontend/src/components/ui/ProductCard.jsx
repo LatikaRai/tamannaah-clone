@@ -4,7 +4,6 @@ const ProductCard = ({product, viewImages='four'}) => {
 
     const [currentIdx, setCurrentIdx] = useState(0)
     const [isHovered, setIsHovered] = useState(false)
-    const [isActive, setIsActive] = useState(false)
 
 
     const allImages = [...product.images]

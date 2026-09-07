@@ -18,7 +18,7 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
         <div className="w-[20vw] z-10 flex flex-col mt-[5.2rem] gap-[0.8rem] cursor-pointer">
             <div
             onClick={()=>handleNavigate('/shop/t-bars')}
-            className='text-gray-400 hover:text-black'
+            className={'hover:text-black text-gray-400'}
             >T-Bars</div>
 
             <div 

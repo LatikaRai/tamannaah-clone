@@ -21,8 +21,9 @@ const Register = () => {
               <div>
                 <input
                   {...register("name", {
+                    required: 'Name is required',
                     pattern: {
-                      value: /^[\p{L}][\p{L}\s.'-]{1,50}$/u,
+                      value: /^[A-Za-z][A-Za-z\s.'-]{1,50}$/,
                       message: "Please enter a valid name",
                     },
                   })}
@@ -30,6 +31,7 @@ const Register = () => {
                   placeholder="FIRST NAME *"
                   className={`border-b border-black w-full pb-[0.3rem] outline-none ${errors.name ? "border-red-500" : "border-black"}`}
                 />
+                {console.log(errors.name)}
                 {errors.name ? (
                   <p className="text-red-600 text-[0.8rem] font-medium">
                     {errors.name?.message}

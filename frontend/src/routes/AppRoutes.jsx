@@ -29,8 +29,10 @@ const AppRoutes = () => {
         <Route path="/shop/trending" element={<MostPopular/>}/>
         <Route path="/shop/tamannah-favourite" element={<TamanaahFavs/>}/>
 
-
+        {/* about tab */}
         <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/about-us/meet-tamannaah" />
+
         <Route path="/search" element={<Search/>}/>
         <Route path="/account/login" element={<Account/>}/>
         <Route path="/account/register" element={<Register/>}/>
