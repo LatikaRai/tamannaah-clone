@@ -11,7 +11,8 @@ const Navbar1 = ({ activeTab, setActiveTab }) => {
         '/collections/rings',
         '/collections/bracelets',
         '/collections/all-jewellery',
-        '/collections/new'
+        '/collections/new',
+        '/about-us/our-store'
   ].includes(location.pathname);
 
   const navColor = isLightBg ? "text-black" : "text-white";
