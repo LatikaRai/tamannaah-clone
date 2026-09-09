@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "../pages/HomePage"
 import MainLayout from "../layout/MainLayout"
-import AboutUs from "../components/AboutUs"
 import Search from "../components/Search"
 import ContactUs from "../pages/ContactUs"
 import Account from "../pages/Account"
@@ -23,6 +22,8 @@ import BraceletCollections from "../pages/BraceletCollections"
 import AllCollections from "../pages/AllCollections"
 import NeclaceCollections from "../pages/NecklaceCollections"
 import NewCollections from "../pages/NewCollections"
+import AboutUs from "../pages/AboutUs"
+import OurStore from "../pages/OurStore"
 
 const AppRoutes = () => {
   return (
@@ -48,8 +49,10 @@ const AppRoutes = () => {
 
 
         {/* about tab */}
-        <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/about-us" element={<AboutUs />}/>
         <Route path="/about-us/meet-tamannaah" element={<MeetTamannah/>} />
+        <Route path="/about-us/our-store" element={<OurStore />} />
+
 
         <Route path="/search" element={<Search/>}/>
         <Route path="/account/login" element={<Account/>}/>

@@ -16,13 +16,13 @@ const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,prod
         </h2>
       </div>
       <div className="w-full h-auto">
-        <div className='w-full h-[48vh] flex items-center justify-between px-[2.5rem]'>
+        <div className='w-full h-[48vh] flex items-center justify-between px-[2.6rem]'>
           <h1 className="text-[1.05em] tracking-tighter uppercase font-['SaaSeries']">{collectionTitle}</h1>
           <p className="w-[36%] text-[16.6px] font-['ArboriaBook'] leading-6 text-justify">
             {description}
           </p>
         </div>
-        <div className="w-full h-auto flex flex-wrap items-center gap-[2.2em] px-[2.5rem]">
+        <div className="w-full h-auto flex flex-wrap items-center gap-[2.2em] px-[2.6rem]">
           {products.map((product,idx) =>{
           return <ProductCard key={product.slug} product={product}/>
         })}

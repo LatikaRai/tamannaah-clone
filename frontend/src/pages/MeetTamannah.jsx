@@ -61,11 +61,11 @@ const MeetTamannah = () => {
       <div className="w-full h-screen flex">
         <div style={{backgroundImage: `url(${meetTamannaahEarringImg})`}} className="w-1/2 h-full bg-center bg-cover uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
             <h1 className="font-semibold text-[0.97rem] tracking-wider pb-[0.3rem]">Earring</h1>
-            <span className="text-[1.1rem] underline">Explore earrings</span>
+            <span className="text-[1.1rem] underline cursor-pointer">Explore earrings</span>
         </div>
         <div style={{backgroundImage: `url(${meetTamannaahFavsImg})`}} className="w-1/2 h-full bg-center bg-cover uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
         <h1 className="font-semibold text-[0.97rem] tracking-wider pb-[0.3rem]">Tamannaah's Favourites</h1>
-            <span className="text-[1.1rem] underline">Explore favourites</span></div>
+            <span className="text-[1.1rem] underline cursor-pointer">Explore favourites</span></div>
       </div>
     </div>
   );
