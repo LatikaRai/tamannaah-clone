@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import tbarDesktop from "../assets/images/tbar-desktop.jpg";
-import ProductCard from "../components/ui/ProductCard";
 import CollectionLayout from "../components/ui/CollectionLayout";
 
 const Tbars = () => {

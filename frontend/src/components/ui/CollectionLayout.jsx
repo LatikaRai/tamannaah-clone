@@ -23,8 +23,8 @@ const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,prod
           </p>
         </div>
         <div className="w-full h-auto flex flex-wrap items-center gap-[2.2em] px-[2.6rem]">
-          {products.map((product,idx) =>{
-          return <ProductCard key={product.slug} product={product}/>
+          {products.map((product) =>{
+          return <ProductCard key={product.id} product={product}/>
         })}
         </div>
       </div>

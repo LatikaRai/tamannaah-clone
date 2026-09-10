@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({product, viewImages='four'}) => {
 
@@ -8,8 +9,10 @@ const ProductCard = ({product, viewImages='four'}) => {
 
     const allImages = [...product.images]
 
+    const navigate = useNavigate()
+
   return (
-    <div className={`${viewImages === 'four' ? 'w-[23%] h-[65vh]' : 'w-[48%] h-[120vh]'} pb-[1em]`}>
+    <div onClick={()=>navigate(`/product/${product.slug}`)} className={`${viewImages === 'four' ? 'w-[23%] h-[65vh]' : 'w-[48%] h-[120vh]'} pb-[1em]`}>
       <div
       onMouseEnter={()=> {
             setCurrentIdx(1)
@@ -58,6 +61,6 @@ const ProductCard = ({product, viewImages='four'}) => {
       </div>
     </div>
   );
-};
+}; 
 
 export default ProductCard;

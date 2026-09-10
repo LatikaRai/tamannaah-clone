@@ -5,14 +5,12 @@ const Navbar2 = ({ activeTab, setActiveTab }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
-  const isLightBg = ["/account/login","/account/register"].includes(
-    location.pathname,
-  );
+  const isLightBg = ["/account/login","/account/register"].includes(location.pathname) || location.pathname.startsWith("/product/");
 
-  const navColor = isLightBg ? "text-black" : "text-white";
+  const navColor = isLightBg ? "text-black bg-white" : "text-white";
   return (
     <nav
-      className={`w-full h-[8vh] cursor-pointer absolute top-0 shadow-2xs shadow-gray-200/50 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
+      className={`w-full h-[8vh] cursor-pointer absolute top-0 shadow-sm shadow-gray-200/60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div
