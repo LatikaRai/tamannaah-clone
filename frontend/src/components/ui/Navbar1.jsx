@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
@@ -6,7 +6,23 @@ const Navbar1 = ({ activeTab, setActiveTab, showNav, scrollY }) => {
 
   const isScrolled = scrollY > 200
 
-  const navColor = isScrolled ? "text-black" : "text-white";
+  const lightBgPages = [
+  "/collections/all-jewellery",
+  "/shop/trending",
+  "/collections/t-bars",
+  "/collections/neclace-pendants",
+  "/collections/earrings",
+  "/collections/rings",
+  "/collections/bracelets",
+  "/collections/new",
+  "/about-us/our-store",
+];
+
+const location = useLocation()
+
+const isLightBg = isScrolled || lightBgPages.includes(location.pathname)
+
+  const navColor = isLightBg ? "text-black" : "text-white";
 
   return (
     <motion.nav
@@ -18,7 +34,7 @@ const Navbar1 = ({ activeTab, setActiveTab, showNav, scrollY }) => {
         duration: 0.2,
         ease: "easeOut",
       }}
-      className={`${isScrolled ? 'bg-white text-black shadow-sm shadow-gray-200/40': 'text-white'} fixed top-0 left-0 w-full cursor-pointer z-60 font-['ArboriaBook'] text-[0.9rem] py-[1em] px-[2.5em] flex items-center justify-between`}
+      className={`${isLightBg ? 'bg-white text-black shadow-sm shadow-gray-200/40': 'text-white'} fixed top-0 left-0 w-full cursor-pointer z-60 font-['ArboriaBook'] text-[0.9rem] py-[1em] px-[2.5em] flex items-center justify-between`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div

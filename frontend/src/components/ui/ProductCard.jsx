@@ -12,7 +12,10 @@ const ProductCard = ({product, viewImages='four'}) => {
     const navigate = useNavigate()
 
   return (
-    <div onClick={()=>navigate(`/product/${product.slug}`)} className={`${viewImages === 'four' ? 'w-[23%] h-[65vh]' : 'w-[48%] h-[120vh]'} pb-[1em]`}>
+    <div onClick={()=>{
+      navigate(`/product/${product.slug}`)
+      window.scrollTo(0,0)
+      }} className={`${viewImages === 'four' ? 'w-[23%] h-[65vh]' : 'w-[48%] h-[120vh]'} z-0 pb-[1em]`}>
       <div
       onMouseEnter={()=> {
             setCurrentIdx(1)
@@ -31,22 +34,26 @@ const ProductCard = ({product, viewImages='four'}) => {
         />
         { isHovered &&(
             <>
-            <i className="ri-heart-line absolute right-0 p-[1em] text-[1.1rem] text-gray-800 top-0"></i>
+            <i onClick={(e)=>{
+              e.stopPropagation()
+            }} className="ri-heart-line absolute z-100 right-0 p-[1em] text-[1.1rem] text-gray-800 top-0"></i>
             <i 
-            onClick={()=>
+            onClick={(e)=>{
+              e.stopPropagation()
               setCurrentIdx(prev => 
                 prev === 0 ? allImages.length - 1 : prev - 1
-              )
+              )}
             }
             className="ri-arrow-left-s-line absolute px-[1em] text-[1.1rem] text-gray-700 top-1/2 left-0"
             ></i>
             <i
-            onClick={()=> 
+            onClick={(e)=> {
+              e.stopPropagation()
               setCurrentIdx(prev => 
               (prev + 1) % allImages.length
-              )
+              )}
             } 
-            className="ri-arrow-right-s-line absolute px-[1em] text-[1.1rem] text-gray-700 top-1/2 right-0"></i>
+            className="ri-arrow-right-s-line absolute z-50 px-[1em] text-[1.1rem] text-gray-700 top-1/2 right-0"></i>
             </>
         )
         }
@@ -58,7 +65,7 @@ const ProductCard = ({product, viewImages='four'}) => {
         <h2 className="font-semibold text-gray-400">
           &#8377; {product.price.toLocaleString("en-IN")}
         </h2>
-      </div>
+      </div>  
     </div>
   );
 }; 

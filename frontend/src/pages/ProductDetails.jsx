@@ -9,12 +9,14 @@ const ProductDetails = () => {
   const { products } = useSelector((state) => state.productReducer);
   const product = products?.find((product) => product.slug === slug);
   console.log("product: ", product);
+  console.log("CURRENT SLUG:", slug);
+console.log("CURRENT PRODUCT:", product);
   return (
     <div className="w-full font-['ArboriaBook']">
       <div className="w-full flex">
         <div className="w-1/2">
           {product.images.map((img) => (
-            <img src={img} className="w-full  object-cover object-center" />
+            <img key={img} src={img} className="w-full  object-cover object-center" />
           ))}
         </div>
         <div className="w-1/2 py-[6.6rem] px-[8.6rem] sticky top-0 h-screen flex flex-col gap-[2.2rem]">
@@ -43,7 +45,7 @@ const ProductDetails = () => {
           <h1 className="font-semibold uppercase w-fit border-b border-black">Related Products</h1>
           <div className="w-full pt-[2.3rem] flex items-center justify-between">
             {
-              products.filter(elem => elem.category === product.category).map((elem)=> (
+              products.filter(elem => elem.category === product.category && elem !== product).map((elem)=> (
                <ProductCard key={elem.id} product={elem}/>
               )).slice(0,4)
             }
