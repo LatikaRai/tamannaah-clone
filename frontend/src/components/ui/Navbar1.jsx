@@ -1,7 +1,9 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
+import { motion } from "motion/react";
+import { div } from "motion/react-client";
 
-const Navbar1 = ({ activeTab, setActiveTab }) => {
+const Navbar1 = ({ activeTab, setActiveTab, showNav, scrollY }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
@@ -18,8 +20,16 @@ const Navbar1 = ({ activeTab, setActiveTab }) => {
   const navColor = isLightBg ? "text-black" : "text-white";
 
   return (
-    <nav
-      className={`w-full cursor-pointer absolute z-60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
+    <motion.nav
+    animate={{
+      y : showNav ? 0 : '-100%' ,
+      opacity : showNav ? 1 : 0
+    }}
+    transition={{
+        duration: 0.2,
+        ease: "easeOut",
+      }}
+      className={`fixed top-0 left-0 bg-white w-full cursor-pointer z-60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div
@@ -41,12 +51,17 @@ const Navbar1 = ({ activeTab, setActiveTab }) => {
           Search
         </div>
       </div>
-      <Link
+      {
+        scrollY  <= 200 ? <Link
         to={"/"}
         className="w-[30%] text-[2.7rem] tracking-wider font-medium absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-[3.4rem] flex items-center justify-center"
       >
         <Logo />
+      </Link> :
+      <Link to={"/"} className="w-[30%] tracking-[0.2rem] font-medium text-[1.2rem]">
+        <Logo />
       </Link>
+      }
       <div className={`w-[30%] flex items-center justify-end gap-[2.6rem]`}>
         <div
           onClick={() => setActiveTab("contact")}
@@ -64,7 +79,7 @@ const Navbar1 = ({ activeTab, setActiveTab }) => {
           Cart
         </NavLink>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

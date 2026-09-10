@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom'
 import Navbar1 from './Navbar1'
 import Navbar2 from './Navbar2'
+import { useRef, useState } from 'react'
 
 const Navbar = ({activeTab,setActiveTab}) => {
     const {pathname} = useLocation()
@@ -25,9 +26,40 @@ const Navbar = ({activeTab,setActiveTab}) => {
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)
+
+    // scrollbar functionality
+    const [showNav, setShowNav] = useState(true)
+    const [scrollY, setScrollY] = useState(0)
+    const lastScrollY = useRef(0)
+
+    useState(()=>{
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY
+        if(currentScrollY === 0) setShowNav(true)
+
+          setScrollY(currentScrollY)
+
+        // ignore tiny movements
+        if(Math.abs(currentScrollY - lastScrollY.current) < 10 ) return
+
+        // scroll down
+        if(currentScrollY > lastScrollY.current) setShowNav(false)
+
+        // scroll up
+        if(currentScrollY < lastScrollY.current) setShowNav(true)
+
+        lastScrollY.current = currentScrollY
+      }
+      window.addEventListener('scroll', handleScroll)
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    },[])
+
   return (
     <div>
-      {showNavbarOne ? <Navbar1 activeTab={activeTab} setActiveTab={setActiveTab}/> : <Navbar2 activeTab={activeTab} setActiveTab={setActiveTab}/>}
+      {showNavbarOne ? <Navbar1 activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
     </div>
   )
 }

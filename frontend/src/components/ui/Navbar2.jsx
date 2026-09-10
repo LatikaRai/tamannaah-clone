@@ -1,7 +1,8 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
+import { motion } from "motion/react";
 
-const Navbar2 = ({ activeTab, setActiveTab }) => {
+const Navbar2 = ({ activeTab, setActiveTab, showNav }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
@@ -9,8 +10,16 @@ const Navbar2 = ({ activeTab, setActiveTab }) => {
 
   const navColor = isLightBg ? "text-black bg-white" : "text-white";
   return (
-    <nav
-      className={`w-full h-[8vh] cursor-pointer absolute top-0 shadow-sm shadow-gray-200/60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
+    <motion.nav
+    animate={{
+      y : showNav ? 0 : '-100%' ,
+      opacity : showNav ? 1 : 0
+    }}
+    transition={{
+        duration: 0.2,
+        ease: "easeOut",
+      }}
+      className={`fixed top-0 left-0 z-100 w-full h-[8vh] cursor-pointer shadow-sm shadow-gray-200/60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div
@@ -53,7 +62,7 @@ const Navbar2 = ({ activeTab, setActiveTab }) => {
         </NavLink>
         
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
