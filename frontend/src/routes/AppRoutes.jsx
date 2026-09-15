@@ -4,8 +4,6 @@ import MainLayout from "../layout/MainLayout"
 import Search from "../components/Search"
 import Account from "../pages/Account"
 import Wishlist from "../pages/Wishlist"
-import Cart from "../pages/Cart"
-import Collections from "../pages/Collections"
 import Tbars from "../pages/Tbars"
 import ProductDetails from "../pages/ProductDetails"
 import AllJewellery from "../pages/AllJewellery"
@@ -23,6 +21,7 @@ import NeclaceCollections from "../pages/NecklaceCollections"
 import NewCollections from "../pages/NewCollections"
 import AboutUs from "../pages/AboutUs"
 import OurStore from "../pages/OurStore"
+import Cart from "../components/Cart"
 
 const AppRoutes = () => {
   return (
@@ -57,9 +56,8 @@ const AppRoutes = () => {
         <Route path="/account/login" element={<Account/>}/>
         <Route path="/account/register" element={<Register/>}/>
         <Route path="/wishlist" element={<Wishlist/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/cart" element={<Cart />}/>
         
-        <Route path="/collections" element={<Collections/>}/>
         <Route path="/collections/all-jewellery" element={<AllJewellery/>}/>
         <Route path="/collections/high-jewelry" element={<HighJewelry/>}/>
 

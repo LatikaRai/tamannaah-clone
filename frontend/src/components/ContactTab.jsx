@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-const ContactTab = ({activeTab,setActiveTab}) => {
+const ContactTab = ({ setActiveTab}) => {
   const {
     register,
     formState: { errors },

@@ -46,7 +46,7 @@ const MainLayout = () => {
         {activeTab && (
           <motion.div>
             <div
-              className="fixed inset-0 bg-black/40 z-50"
+              className="fixed inset-0 bg-black/40 z-70"
               // when clicking on other than the side bars, the sidebar should disappear
               onClick={() => setActiveTab(null)}
             ></div>
@@ -65,7 +65,7 @@ const MainLayout = () => {
         {sortingTab && (
           <motion.div>
             <div
-              className="fixed inset-0 bg-black/40 z-50"
+              className="fixed inset-0 bg-black/40 z-90"
               // when clicking on other than the side bars, the sorting tab should disappear
               onClick={() => setSortingTab(false)}
             ></div>

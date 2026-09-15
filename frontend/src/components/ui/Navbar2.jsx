@@ -19,7 +19,7 @@ const Navbar2 = ({ activeTab, setActiveTab, showNav }) => {
         duration: 0.2,
         ease: "easeOut",
       }}
-      className={`fixed top-0 left-0 z-100 w-full h-[8vh] cursor-pointer shadow-sm shadow-gray-200/60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
+      className={`fixed top-0 left-0 z-90 w-full h-[8vh] cursor-pointer shadow-sm shadow-gray-200/60 font-['ArboriaBook'] text-[0.9rem] py-[1.3em] px-[2.5em] flex items-center justify-between ${navColor}`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div
@@ -57,9 +57,12 @@ const Navbar2 = ({ activeTab, setActiveTab, showNav }) => {
         <NavLink onClick={() => setActiveTab(null)} to={"/wishlist"}>
           Wishlist
         </NavLink>
-        <NavLink onClick={() => setActiveTab(null)} to={"/cart"}>
+        <div
+          onClick={() => setActiveTab("cart")}
+          className={activeTab === "cart" ? "text-black" : navColor}
+        >
           Cart
-        </NavLink>
+        </div>
         
       </div>
     </motion.nav>

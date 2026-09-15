@@ -1,16 +1,24 @@
-import { div } from "motion/react-client";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useOutletContext, useParams } from "react-router-dom";
 import ProductCard from "../components/ui/ProductCard";
+import { addToCart } from "../features/cart/cartSlice";
 
 const ProductDetails = () => {
+
+  const dispatch = useDispatch()
+
   const { slug } = useParams();
+
+  const {setActiveTab} = useOutletContext()
 
   const { products } = useSelector((state) => state.productReducer);
   const product = products?.find((product) => product.slug === slug);
-  console.log("product: ", product);
-  console.log("CURRENT SLUG:", slug);
-console.log("CURRENT PRODUCT:", product);
+
+  // add to cart
+  const addToCartHandler = (item) => {
+    dispatch(addToCart(item))
+  }
+
   return (
     <div className="w-full font-['ArboriaBook']">
       <div className="w-full flex">
@@ -32,10 +40,10 @@ console.log("CURRENT PRODUCT:", product);
           </p>
           <span className="italic text-[0.9rem]">Ready to ship</span>
           <div>
-            <div className="w-full py-[0.6rem] bg-black text-[0.8rem] text-white font-semibold text-center uppercase mb-[0.9rem]">
+            <div onClick={()=>addToCartHandler(product)} className="w-full py-[0.6rem] bg-black text-[0.8rem] cursor-pointer text-white font-semibold text-center uppercase mb-[0.9rem]">
               Add to cart
             </div>
-            <div className="w-full py-[0.6rem] border border-gray-800 hover:bg-black hover:text-white transition-all delay-75 text-[0.8rem]  font-semibold text-center uppercase">
+            <div onClick={()=>setActiveTab('contact')} className="w-full py-[0.6rem] border border-gray-800 hover:bg-black hover:text-white transition-all delay-75 text-[0.8rem] cursor-pointer font-semibold text-center uppercase">
               Enquire
             </div>
           </div>

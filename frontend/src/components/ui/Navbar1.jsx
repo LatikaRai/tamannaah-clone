@@ -34,11 +34,12 @@ const isLightBg = isScrolled || lightBgPages.includes(location.pathname)
         duration: 0.2,
         ease: "easeOut",
       }}
-      className={`${isLightBg ? 'bg-white text-black shadow-sm shadow-gray-200/40': 'text-white'} fixed top-0 left-0 w-full cursor-pointer z-60 font-['ArboriaBook'] text-[0.9rem] py-[1em] px-[2.5em] flex items-center justify-between`}
+      className={`${isLightBg ? 'bg-white text-black': 'text-white'} ${isScrolled? 'shadow-sm shadow-gray-200/40' : ''} fixed top-0 left-0 w-full cursor-pointer z-60 font-['ArboriaBook'] text-[0.9rem] py-[1em] px-[2.5em] flex items-center justify-between`}
     >
       <div className="w-[30%] flex items-center justify-start gap-[2.6rem]">
         <div
-          onClick={() => setActiveTab("shop")}
+          onClick={() => {
+            setActiveTab("shop")}}
           className={activeTab === "shop" ? "text-black" : navColor}
         >
           Shop
@@ -80,9 +81,9 @@ const isLightBg = isScrolled || lightBgPages.includes(location.pathname)
         <NavLink onClick={() => setActiveTab(null)} to={"/wishlist"}>
           Wishlist
         </NavLink>
-        <NavLink onClick={() => setActiveTab(null)} to={"/cart"}>
+        <div onClick={() => setActiveTab('cart')} className={activeTab === "cart" ? "text-black" : navColor}>
           Cart
-        </NavLink>
+        </div>
       </div>
     </motion.nav>
   );
