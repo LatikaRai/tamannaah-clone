@@ -19,24 +19,28 @@ const ProductDetails = () => {
     dispatch(addToCart(item))
   }
 
+  // loading guard
+  if(!product)
+    return <div className="w-full h-screen flex items-center justify-center uppercase font-semibold font-['ArboriaBook']">Loading...</div>
+
   return (
     <div className="w-full font-['ArboriaBook']">
       <div className="w-full flex">
         <div className="w-1/2">
-          {product.images.map((img) => (
+          {product?.images?.map((img) => (
             <img key={img} src={img} className="w-full  object-cover object-center" />
           ))}
         </div>
         <div className="w-1/2 py-[6.6rem] px-[8.6rem] sticky top-0 h-screen flex flex-col gap-[2.2rem]">
-          <h1 className="uppercase font-semibold">{product.title}</h1>
-          <h2>₹{product.price.toLocaleString("en-IN")}</h2>
+          <h1 className="uppercase font-semibold">{product?.title}</h1>
+          <h2>₹{product?.price.toLocaleString("en-IN")}</h2>
           <img
-            src={product.thumbnail}
+            src={product?.thumbnail}
             className="w-[6.6rem] object-cover object-center"
             alt=""
           />
           <p className="text-[0.9rem] text-justify font-light">
-            {product.description}
+            {product?.description}
           </p>
           <span className="italic text-[0.9rem]">Ready to ship</span>
           <div>

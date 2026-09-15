@@ -55,7 +55,7 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
               ease: [0.22, 1, 0.36, 1]
               }}
       exit={{ opacity: 1, x: '100%' }}
-      className='fixed h-screen w-[35%] right-0 bg-white z-120 text-gray-800 py-[1.4rem] font-["ArboriaBook"]'
+      className='fixed h-screen w-[35%] top-0 right-0 bg-white z-150 text-gray-800 py-[1.4rem] font-["ArboriaBook"]'
       >
           <div className="flex gap-[2.6rem] cursor-pointer text-[0.9rem]">
           </div>
