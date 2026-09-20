@@ -2,15 +2,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import AppRoutes from "./routes/AppRoutes"
 import { useEffect } from 'react'
 import { asyncLoadProducts } from './actions/productActions'
+import { asyncLoadWishlist } from './actions/wishlistActions'
 
 const App = () => {
   const dispatch = useDispatch()
-  const {products} = useSelector(state => state.productReducer)
 
   useEffect(()=>{
     dispatch(asyncLoadProducts())
-    console.log(products)
-  },[])
+    dispatch(asyncLoadWishlist())
+  },[dispatch])
   return <AppRoutes/>
 }
 

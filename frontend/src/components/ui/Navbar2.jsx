@@ -2,11 +2,11 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
-const Navbar2 = ({ activeTab, setActiveTab, showNav }) => {
+const Navbar2 = ({ wishlist, activeTab, setActiveTab, showNav }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
-  const isLightBg = ["/account/login","/account/register"].includes(location.pathname) || location.pathname.startsWith("/product/");
+  const isLightBg = ["/account/login","/account/register","/wishlist"].includes(location.pathname) || location.pathname.startsWith("/product/");
 
   const navColor = isLightBg ? "text-black bg-white" : "text-white";
   return (
@@ -55,7 +55,7 @@ const Navbar2 = ({ activeTab, setActiveTab, showNav }) => {
           Account
         </NavLink>
         <NavLink onClick={() => setActiveTab(null)} to={"/wishlist"}>
-          Wishlist
+          Wishlist({wishlist.length})
         </NavLink>
         <div
           onClick={() => setActiveTab("cart")}

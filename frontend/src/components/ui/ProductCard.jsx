@@ -1,15 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { asyncAddToWishlist, asyncLoadWishlist, asyncRemoveFromWishlist } from "../../actions/wishlistActions";
 
 const ProductCard = ({product, viewImages='four'}) => {
+
+  const dispatch = useDispatch()
 
     const [currentIdx, setCurrentIdx] = useState(0)
     const [isHovered, setIsHovered] = useState(false)
 
-
     const allImages = [...product.images]
 
     const navigate = useNavigate()
+
+    // wishlist
+    const {wishlist} = useSelector(state => state.wishlistReducer)
+    
+    const wishlistItem = wishlist.find(
+  item => item.slug === product.slug
+);
+
+    const wishlistHandler = () => {
+      if(wishlistItem){
+        dispatch(asyncRemoveFromWishlist(wishlistItem))
+      }
+      else{
+        dispatch(asyncAddToWishlist(product))
+      }
+    }
 
   return (
     <div onClick={()=>{
@@ -26,8 +45,7 @@ const ProductCard = ({product, viewImages='four'}) => {
             setIsHovered(false)
         }} 
       className={`${viewImages === 'four' ? 'h-[57vh]' : 'h-[115vh]'} w-full relative cursor-pointer`}>
-        <img
-          
+        <img        
           className='w-full h-full object-cover'
           src={allImages[currentIdx]}
           alt=""
@@ -35,8 +53,9 @@ const ProductCard = ({product, viewImages='four'}) => {
         { isHovered &&(
             <>
             <i onClick={(e)=>{
-              e.stopPropagation()
-            }} className="ri-heart-line absolute z-100 right-0 p-[1em] text-[1.1rem] text-gray-800 top-0"></i>
+              e.stopPropagation() 
+              wishlistHandler()
+            }} className={`${wishlistItem ? 'ri-heart-fill' : 'ri-heart-line'} absolute z-100 right-0 p-[1em] text-[1.1rem] text-gray-800 top-0`}></i>
             <i 
             onClick={(e)=>{
               e.stopPropagation()

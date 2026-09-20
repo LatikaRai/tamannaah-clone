@@ -37,7 +37,7 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
             >Search</div>
         </div>
         <div>
-            {activeTab === 'shop' && <ShopTab activeTab={activeTab} setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
+            {activeTab === 'shop' && <ShopTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
             {activeTab === 'about' && <AboutTab/>}
             {activeTab === 'search' && <SearchTab/>}
         </div>

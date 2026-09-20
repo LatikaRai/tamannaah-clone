@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
-const Navbar1 = ({ activeTab, setActiveTab, showNav, scrollY }) => {
+const Navbar1 = ({ wishlist, activeTab, setActiveTab, showNav, scrollY }) => {
 
   const isScrolled = scrollY > 200
 
@@ -79,7 +79,7 @@ const isLightBg = isScrolled || lightBgPages.includes(location.pathname)
           Account
         </NavLink>
         <NavLink onClick={() => setActiveTab(null)} to={"/wishlist"}>
-          Wishlist
+          Wishlist({wishlist.length})
         </NavLink>
         <div onClick={() => setActiveTab('cart')} className={activeTab === "cart" ? "text-black" : navColor}>
           Cart

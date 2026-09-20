@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import SortingTab from "../SortingTab";
 import { useOutletContext } from "react-router-dom";
@@ -49,6 +49,10 @@ const ProductsListingLayout = ({
   if (selectedSort === "Price, high to low") {
     filteredProducts.sort((a, b) => b.price - a.price);
   }
+
+  useEffect(()=>{
+    
+  })
 
   return (
     <div className="w-full relative px-[2.5em]">

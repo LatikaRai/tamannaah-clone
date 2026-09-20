@@ -4,7 +4,7 @@ import jewellerryMenu from "../assets/images/jewellery-menu.jpg"
 import highJewelry from "../assets/images/high-jewelry.jpg";
 import { useNavigate } from "react-router-dom";
 
-const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
+const ShopTab = ({ setActiveTab, setPendingRoute}) => {
 
     const [openCategory, setOpenCategory] = useState(null)
 
@@ -61,13 +61,13 @@ const ShopTab = ({activeTab, setActiveTab, setPendingRoute}) => {
             }}
             className="absolute top-0 bottom-0 z-10 w-[18vw] pt-[6.4rem] px-[2.3rem] text-gray-400 hover:text-black bg-white">
                 <div className="flex flex-col text-[1.3rem] gap-[0.8rem]">
-                    <div onClick={()=>navigate('/collections/new')} className='text-gray-400 hover:text-black cursor-pointer'>New In</div>
-                    <div onClick={()=>navigate('/collections/t-bars')} className='text-gray-400 hover:text-black cursor-pointer'>T-Bars</div>
-                    <div onClick={()=>navigate('/collections/neclace-pendants')} className='text-gray-400 hover:text-black cursor-pointer'>Necklace & Pendants</div>
-                    <div onClick={()=>navigate('/collections/earrings')} className='text-gray-400 hover:text-black cursor-pointer'>Earrings</div>
-                    <div onClick={()=>navigate('/collections/rings')} className='text-gray-400 hover:text-black cursor-pointer'>Rings</div>
-                    <div onClick={()=>navigate('/collections/bracelets')} className='text-gray-400 hover:text-black cursor-pointer'>Bracelets</div>
-                    <div onClick={()=>navigate('/collections/all-jewellery')} className='text-gray-400 hover:text-black cursor-pointer'>All Jewelry</div>
+                    <div onClick={()=>handleNavigate('/collections/new')} className='text-gray-400 hover:text-black cursor-pointer'>New In</div>
+                    <div onClick={()=>handleNavigate('/collections/t-bars')} className='text-gray-400 hover:text-black cursor-pointer'>T-Bars</div>
+                    <div onClick={()=>handleNavigate('/collections/neclace-pendants')} className='text-gray-400 hover:text-black cursor-pointer'>Necklace & Pendants</div>
+                    <div onClick={()=>handleNavigate('/collections/earrings')} className='text-gray-400 hover:text-black cursor-pointer'>Earrings</div>
+                    <div onClick={()=>handleNavigate('/collections/rings')} className='text-gray-400 hover:text-black cursor-pointer'>Rings</div>
+                    <div onClick={()=>handleNavigate('/collections/bracelets')} className='text-gray-400 hover:text-black cursor-pointer'>Bracelets</div>
+                    <div onClick={()=>handleNavigate('/collections/all-jewellery')} className='text-gray-400 hover:text-black cursor-pointer'>All Jewelry</div>
                 </div>
             </motion.div>
         )}

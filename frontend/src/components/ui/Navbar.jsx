@@ -2,8 +2,11 @@ import { useLocation } from 'react-router-dom'
 import Navbar1 from './Navbar1'
 import Navbar2 from './Navbar2'
 import { useEffect, useRef, useState } from 'react'
+import { useSelector } from 'react-redux'
 
 const Navbar = ({activeTab,setActiveTab}) => {
+
+  const { wishlist } = useSelector(state => state.wishlistReducer)
 
     const {pathname} = useLocation()
 
@@ -60,7 +63,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
 
   return (
     <div>
-      {showNavbarOne ? <Navbar1 activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
+      {showNavbarOne ? <Navbar1 wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
     </div>
   )
 }

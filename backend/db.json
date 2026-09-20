@@ -1,65 +1,12 @@
 {
-    "users": [],
-
-    "cart": [],
-
-  "products": [
-    {
-      "slug": "yellow-diamond-bracelet",
-      "title": "Yellow Diamond Bracelet",
-      "category": "Bracelet",
-      "price": 2150000.0,
-      "description": "Exquisitely crafted in 18K White Gold, this timeless Yellow Diamond Bracelet features 410 round natural diamonds accented by 14 captivating oval yellow diamonds. A classic expression of elegance, it r",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107copy.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036-Copy_2_copy.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107-Copycopy.webp?v=1778658248"
-      ],
-      "rating": 4.1,
-      "stock": 5,
-      "featured": true
-    },
-    {
-      "slug": "polka-dot-link-t-bar-chain",
-      "title": "Polka Dot Link T-Bar Chain",
-      "category": "Necklace",
-      "price": 1207000.0,
-      "description": "Polka Dot Link T-Bar Chain in 18K yellow gold, accented with 82 round natural diamonds and 11 baguette natural diamonds, blending playful detail with refined geometric brilliance.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copycopy.webp?v=1779693392",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copy_2_copy.webp?v=1779693392",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_16.webp?v=1779693392"
-      ],
-      "rating": 4.2,
-      "stock": 8,
-      "featured": true
-    },
-    {
-      "slug": "love-emerald-necklace",
-      "title": "Love Emerald Necklace",
-      "category": "Necklace",
-      "price": 5752000.0,
-      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
-      ],
-      "rating": 4.3,
-      "stock": 11,
-      "featured": true
-    },
+  "users": [],
+  "cart": [],
+  "wishlist": [
     {
       "slug": "blue-enamel-pav-ear-cuff",
       "title": "Blue Enamel Pavé Ear Cuff",
       "category": "Earring",
-      "price": 180000.0,
+      "price": 180000,
       "description": "A striking blend of modern glamour and elegance, this Blue Enamel Pavé Ear Cuff in 14K yellow gold shines with 74 round natural diamonds and rich blue enamel detailing.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_13.webp?v=1779780433",
       "images": [
@@ -70,30 +17,32 @@
       ],
       "rating": 4.4,
       "stock": 14,
-      "featured": true
+      "featured": true,
+      "id": "TDjmpn5z0pM"
     },
     {
-      "slug": "marquise-curve-huggies",
-      "title": "Marquise Curve Huggies",
-      "category": "Earring",
-      "price": 268000.0,
-      "description": "Marquise Curve Huggies crafted in 18K yellow gold, featuring two natural marquise-shaped diamonds that bring refined brilliance and timeless elegance to their sleek curved design.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
+      "slug": "yellow-diamond-bracelet",
+      "title": "Yellow Diamond Bracelet",
+      "category": "Bracelet",
+      "price": 2150000,
+      "description": "Exquisitely crafted in 18K White Gold, this timeless Yellow Diamond Bracelet features 410 round natural diamonds accented by 14 captivating oval yellow diamonds. A classic expression of elegance, it r",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_17_f088aed7-aed4-4971-8a05-12e282ea27fc.webp?v=1780904771",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0008copy_4.webp?v=1780904771",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_30.webp?v=1780904771"
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107copy.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036-Copy_2_copy.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107-Copycopy.webp?v=1778658248"
       ],
-      "rating": 4.5,
-      "stock": 17,
-      "featured": true
+      "rating": 4.1,
+      "stock": 5,
+      "featured": true,
+      "id": "FGqfc7yBPGg"
     },
     {
       "slug": "baby-diamond-flick-earring",
       "title": "Baby Diamond Flick Earring",
       "category": "Earring",
-      "price": 224000.0,
+      "price": 224000,
       "description": "Baby Diamond Flick Earrings crafted in 14K yellow gold, featuring 96 natural round diamonds that create a radiant sparkle and add a touch of elegance to their delicate, contemporary design.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0019copy_2.webp?v=1780905585",
       "images": [
@@ -104,13 +53,124 @@
       ],
       "rating": 4.6,
       "stock": 20,
-      "featured": true
+      "featured": true,
+      "id": "ZtirELWGVig"
+    }
+  ],
+  "products": [
+    {
+      "slug": "yellow-diamond-bracelet",
+      "title": "Yellow Diamond Bracelet",
+      "category": "Bracelet",
+      "price": 2150000,
+      "description": "Exquisitely crafted in 18K White Gold, this timeless Yellow Diamond Bracelet features 410 round natural diamonds accented by 14 captivating oval yellow diamonds. A classic expression of elegance, it r",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107copy.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036-Copy_2_copy.webp?v=1778658248",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107-Copycopy.webp?v=1778658248"
+      ],
+      "rating": 4.1,
+      "stock": 5,
+      "featured": true,
+      "id": "Qpl9rEOfT_8"
+    },
+    {
+      "slug": "polka-dot-link-t-bar-chain",
+      "title": "Polka Dot Link T-Bar Chain",
+      "category": "Necklace",
+      "price": 1207000,
+      "description": "Polka Dot Link T-Bar Chain in 18K yellow gold, accented with 82 round natural diamonds and 11 baguette natural diamonds, blending playful detail with refined geometric brilliance.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copycopy.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copy_2_copy.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_16.webp?v=1779693392"
+      ],
+      "rating": 4.2,
+      "stock": 8,
+      "featured": true,
+      "id": "1MNTyLFuR2g"
+    },
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "JiHS_HhXlzE"
+    },
+    {
+      "slug": "blue-enamel-pav-ear-cuff",
+      "title": "Blue Enamel Pavé Ear Cuff",
+      "category": "Earring",
+      "price": 180000,
+      "description": "A striking blend of modern glamour and elegance, this Blue Enamel Pavé Ear Cuff in 14K yellow gold shines with 74 round natural diamonds and rich blue enamel detailing.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_13.webp?v=1779780433",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_13.webp?v=1779780433",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_21.webp?v=1779780433",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0033copy_2.webp?v=1779780434",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0028copy_f4bb5c07-0198-4bdb-94e5-8cb69d0bc72d.webp?v=1779780434"
+      ],
+      "rating": 4.4,
+      "stock": 14,
+      "featured": true,
+      "id": "gXB4nsnIpJ4"
+    },
+    {
+      "slug": "marquise-curve-huggies",
+      "title": "Marquise Curve Huggies",
+      "category": "Earring",
+      "price": 268000,
+      "description": "Marquise Curve Huggies crafted in 18K yellow gold, featuring two natural marquise-shaped diamonds that bring refined brilliance and timeless elegance to their sleek curved design.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_17_f088aed7-aed4-4971-8a05-12e282ea27fc.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0008copy_4.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_30.webp?v=1780904771"
+      ],
+      "rating": 4.5,
+      "stock": 17,
+      "featured": true,
+      "id": "ugXvXs2q7IU"
+    },
+    {
+      "slug": "baby-diamond-flick-earring",
+      "title": "Baby Diamond Flick Earring",
+      "category": "Earring",
+      "price": 224000,
+      "description": "Baby Diamond Flick Earrings crafted in 14K yellow gold, featuring 96 natural round diamonds that create a radiant sparkle and add a touch of elegance to their delicate, contemporary design.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0019copy_2.webp?v=1780905585",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0019copy_2.webp?v=1780905585",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_31.webp?v=1780905585",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0033copy_3.webp?v=1780905585",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_4.webp?v=1780905585"
+      ],
+      "rating": 4.6,
+      "stock": 20,
+      "featured": true,
+      "id": "eDQKlgWIyJg"
     },
     {
       "slug": "pear-curve-huggies",
       "title": "Pear Curve Huggies",
       "category": "Earring",
-      "price": 278000.0,
+      "price": 278000,
       "description": "Pear Curve Huggies crafted in 18K yellow gold, featuring two natural pear diamonds that add a touch of timeless elegance and subtle sparkle to their graceful curved design.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_29.webp?v=1780904167",
       "images": [
@@ -121,13 +181,14 @@
       ],
       "rating": 4.7,
       "stock": 23,
-      "featured": true
+      "featured": true,
+      "id": "FuetSYCm1XU"
     },
     {
       "slug": "safari-black-diamond-bracelet",
       "title": "Safari Black Diamond Bracelet",
       "category": "Bracelet",
-      "price": 800000.0,
+      "price": 800000,
       "description": "A bold expression of luxury, crafted in 18K yellow gold and set with 142 natural round diamonds and 205 black diamonds. The striking contrast of light and dark creates a look that is both powerful and",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0015copy_a7d954b3-48d3-480b-8f0a-c8d12e8ea93a.webp?v=1780472799",
       "images": [
@@ -138,13 +199,14 @@
       ],
       "rating": 4.8,
       "stock": 26,
-      "featured": true
+      "featured": true,
+      "id": "Jkm7f7AFh80"
     },
     {
       "slug": "choker-tennis-necklace",
       "title": "Choker Tennis Necklace",
       "category": "Necklace",
-      "price": 1698000.0,
+      "price": 1698000,
       "description": "A modern classic, the Choker Tennis Necklace showcases 27 princess-cut natural diamonds meticulously set in 14K yellow gold, offering striking brilliance and effortless sophistication.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_14.webp?v=1780317373",
       "images": [
@@ -155,13 +217,14 @@
       ],
       "rating": 4.9,
       "stock": 29,
-      "featured": false
+      "featured": false,
+      "id": "-2W0WcPbh_U"
     },
     {
       "slug": "classic-claw-climber-earring",
       "title": "Classic Claw Climber Earring",
       "category": "Earring",
-      "price": 689000.0,
+      "price": 689000,
       "description": "A bold expression of modern elegance, the Classic Claw Climber Earrings are crafted in 14K rose gold and adorned with 174 natural round diamonds and 40 natural baguette diamonds.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0149_-_Copy_copy.webp?v=1780555010",
       "images": [
@@ -172,13 +235,14 @@
       ],
       "rating": 4.1,
       "stock": 32,
-      "featured": false
+      "featured": false,
+      "id": "cG8LE2u3Bvk"
     },
     {
       "slug": "sleek-grooved-gold-band",
       "title": "Sleek Grooved Gold Band",
       "category": "Ring",
-      "price": 118000.0,
+      "price": 118000,
       "description": "Sleek Gold Grooved Band crafted in 14K yellow gold and adorned with 24 natural round diamonds. A modern statement of understated luxury.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_12.webp?v=1780304694",
       "images": [
@@ -189,13 +253,14 @@
       ],
       "rating": 4.2,
       "stock": 35,
-      "featured": false
+      "featured": false,
+      "id": "wrb2l3K7mGg"
     },
     {
       "slug": "sleek-snow-grooved-band",
       "title": "Sleek Snow Grooved Band",
       "category": "Ring",
-      "price": 117000.0,
+      "price": 117000,
       "description": "Sleek Snow Grooved Band crafted in 14K white gold and set with 24 natural round diamonds. A refined expression of modern elegance with a brilliant touch of sparkle.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_13.webp?v=1780311514",
       "images": [
@@ -206,13 +271,14 @@
       ],
       "rating": 4.3,
       "stock": 38,
-      "featured": false
+      "featured": false,
+      "id": "MjtIKDu1M_E"
     },
     {
       "slug": "sleek-rose-grooved-band",
       "title": "Sleek Rose Grooved Band",
       "category": "Ring",
-      "price": 114000.0,
+      "price": 114000,
       "description": "Sleek Rose Grooved Band crafted in 14K rose gold and set with 24 natural round diamonds. A perfect balance of contemporary design and timeless sparkle.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_14.webp?v=1780312092",
       "images": [
@@ -223,13 +289,14 @@
       ],
       "rating": 4.4,
       "stock": 41,
-      "featured": false
+      "featured": false,
+      "id": "FWiN9gK8ugA"
     },
     {
       "slug": "cupped-dome-ring",
       "title": "Cupped Dome Ring",
       "category": "Ring",
-      "price": 596000.0,
+      "price": 596000,
       "description": "A sculptural dome silhouette in 18K yellow gold, set with 168 round natural diamonds that radiate warmth and brilliance. Bold, luminous, and timelessly refined.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_12.webp?v=1780302582",
       "images": [
@@ -240,13 +307,14 @@
       ],
       "rating": 4.5,
       "stock": 44,
-      "featured": false
+      "featured": false,
+      "id": "2Je7msqzRQw"
     },
     {
       "slug": "dumbbell-t-bar-chain",
       "title": "Dumbbell T-Bar Chain",
       "category": "Necklace",
-      "price": 458000.0,
+      "price": 458000,
       "description": "Dumbbell T-Bar Chain in 14K Yellow Gold, set with 8 round natural diamonds. Featuring a bold dumbbell-inspired T-bar design, this piece offers subtle sparkle with modern edge.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0008copy_03ee770d-3964-4755-9438-de1ff9f568ef.webp?v=1778055473",
       "images": [
@@ -257,13 +325,14 @@
       ],
       "rating": 4.6,
       "stock": 47,
-      "featured": false
+      "featured": false,
+      "id": "mBOJndZ7GrY"
     },
     {
       "slug": "mega-ball-chain",
       "title": "Mega Ball Chain",
       "category": "Necklace",
-      "price": 1086000.0,
+      "price": 1086000,
       "description": "Crafted in 14K yellow gold, the Mega Ball Chain features polished gold beads accented with a round natural diamond for a timeless and elegant look.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_17.webp?v=1779955699",
       "images": [
@@ -274,13 +343,14 @@
       ],
       "rating": 4.7,
       "stock": 50,
-      "featured": false
+      "featured": false,
+      "id": "xgSeGAwiCNQ"
     },
     {
       "slug": "pear-claw-earring",
       "title": "Pear Claw Earring",
       "category": "Earring",
-      "price": 316000.0,
+      "price": 316000,
       "description": "Pear Claw Earrings in 14K yellow gold, set with 93 round natural diamonds and 2 pear-shaped natural diamonds, combining bold structure with radiant elegance.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0106copy_1.webp?v=1779539335",
       "images": [
@@ -291,13 +361,14 @@
       ],
       "rating": 4.8,
       "stock": 7,
-      "featured": false
+      "featured": false,
+      "id": "-Y0DG4LpEN8"
     },
     {
       "slug": "claw-hoop-earring",
       "title": "Claw Hoop Earring",
       "category": "Earring",
-      "price": 243000.0,
+      "price": 243000,
       "description": "Claw Hoop Earrings in 14K yellow gold, set with 125 round natural diamonds, featuring a bold silhouette with striking brilliance and modern edge.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_11.webp?v=1779535400",
       "images": [
@@ -308,13 +379,14 @@
       ],
       "rating": 4.9,
       "stock": 10,
-      "featured": false
+      "featured": false,
+      "id": "kwEp2FkpopE"
     },
     {
       "slug": "snow-cupped-dome-ring",
       "title": "Snow Cupped Dome Ring",
       "category": "Ring",
-      "price": 718000.0,
+      "price": 718000,
       "description": "A soft concave silhouette in 14K white gold, illuminated by 167 round natural diamonds that shimmer like fresh snow. Sculptural, luminous, and effortlessly elegant.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_9.webp?v=1779700911",
       "images": [
@@ -325,13 +397,14 @@
       ],
       "rating": 4.1,
       "stock": 13,
-      "featured": false
+      "featured": false,
+      "id": "DoNcigDl0qs"
     },
     {
       "slug": "baby-twin-gold-flick-earring",
       "title": "Baby Twin Gold Flick Earring",
       "category": "Earring",
-      "price": 129000.0,
+      "price": 129000,
       "description": "Two tones, one playful expression. Baby Twin Gold Flick Earrings in 14K yellow and white gold bring the same sleek flick design in a refined, delicate silhouette made for everyday charm.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0007copy_1_9f8b0693-156b-4a80-826c-b1503f130a7a.webp?v=1779534473",
       "images": [
@@ -342,13 +415,14 @@
       ],
       "rating": 4.2,
       "stock": 16,
-      "featured": false
+      "featured": false,
+      "id": "2RDVnZS398E"
     },
     {
       "slug": "polka-dot-orb-bracelet",
       "title": "Polka Dot Orb Bracelet",
       "category": "Bracelet",
-      "price": 450000.0,
+      "price": 450000,
       "description": "Playful yet elegant, this crescent-shaped Polka Dot Orb Bracelet is crafted in 14K yellow gold and adorned with 72 round natural diamonds, creating a radiant sparkle with a modern artistic touch.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0046copy_73bac452-3ca3-4ab6-814a-688c3572f28d.webp?v=1779709931",
       "images": [
@@ -359,13 +433,14 @@
       ],
       "rating": 4.3,
       "stock": 19,
-      "featured": false
+      "featured": false,
+      "id": "ugGQzr6PilU"
     },
     {
       "slug": "moonstar-pav-pearl-necklace",
       "title": "Moonstar Pavé Pearl Necklace",
       "category": "Necklace",
-      "price": 814000.0,
+      "price": 814000,
       "description": "A striking expression of elegance, this 14K yellow gold design is adorned with 261 round natural diamonds, delivering captivating brilliance with a bold yet refined presence.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_12.webp?v=1779710339",
       "images": [
@@ -376,13 +451,14 @@
       ],
       "rating": 4.4,
       "stock": 22,
-      "featured": false
+      "featured": false,
+      "id": "d0Qimm321I0"
     },
     {
       "slug": "leopard-diamond-ring",
       "title": "Leopard Diamond Ring",
       "category": "Ring",
-      "price": 224000.0,
+      "price": 224000,
       "description": "Leopard Diamond Ring crafted in 14K yellow gold, set with 123 round natural diamonds and 7 brown diamonds, combining bold elegance with intricate craftsmanship.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_14.webp?v=1779531971",
       "images": [
@@ -393,13 +469,14 @@
       ],
       "rating": 4.5,
       "stock": 25,
-      "featured": false
+      "featured": false,
+      "id": "8W26i1rr0qw"
     },
     {
       "slug": "mini-flick-chain",
       "title": "Mini Flick Chain",
       "category": "",
-      "price": 1657000.0,
+      "price": 1657000,
       "description": "A mini take on the iconic Flick Chain, designed with the same signature fluidity and bold character. Crafted in 18K yellow gold and set with 580 round natural diamonds, it features the unmistakable Fl",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_1_90882f3a-5385-42f8-bb0a-d30a2700c08b.webp?v=1777977209",
       "images": [
@@ -410,13 +487,14 @@
       ],
       "rating": 4.6,
       "stock": 28,
-      "featured": false
+      "featured": false,
+      "id": "5yRraOttC_s"
     },
     {
       "slug": "drop-claw-climber-earring",
       "title": "Drop Claw Climber Earring",
       "category": "Earring",
-      "price": 904000.0,
+      "price": 904000,
       "description": "Set in radiant 14K Yellow Gold, these striking Drop Claw Climber Earrings showcase 205 round natural diamonds, 22 baguette natural diamonds, and a dazzling pear-shaped natural diamond. Designed to swe",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0175_-_Copy_copy_1.webp?v=1780574413",
       "images": [
@@ -427,13 +505,14 @@
       ],
       "rating": 4.7,
       "stock": 31,
-      "featured": false
+      "featured": false,
+      "id": "8xh8ertPbEA"
     },
     {
       "slug": "line-t-bar-chain",
       "title": "Line T-Bar Chain",
       "category": "Necklace",
-      "price": 967000.0,
+      "price": 967000,
       "description": "Beautifully crafted in 14K yellow gold, this elegant Line T-Bar Chain features 283 round natural diamonds that add brilliant sparkle. A perfect blend of modern style and classic luxury, ideal for any ",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_6.webp?v=1778765128",
       "images": [
@@ -444,13 +523,14 @@
       ],
       "rating": 4.8,
       "stock": 34,
-      "featured": false
+      "featured": false,
+      "id": "HgwPCc0fqs8"
     },
     {
       "slug": "tiger-s-eye-charm-necklace",
       "title": "Tiger’s Eye Charm Necklace",
       "category": "Necklace",
-      "price": 1024000.0,
+      "price": 1024000,
       "description": "A luxurious mala featuring 56 natural Tiger’s Eye beads, adorned with sparkling 201 Round diamonds and accented with Emerald, Heart, Pear, and Cushion cut diamonds, all beautifully set in 18K Yellow G",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_e12e611a-67f5-43e5-9462-1beac78477d4.webp?v=1778481179",
       "images": [
@@ -461,13 +541,14 @@
       ],
       "rating": 4.9,
       "stock": 37,
-      "featured": false
+      "featured": false,
+      "id": "Xo22R-EC69A"
     },
     {
       "slug": "ocean-heart-necklace",
       "title": "Ocean Heart Necklace",
       "category": "Necklace",
-      "price": 1362000.0,
+      "price": 1362000,
       "description": "A graceful mala crafted with vibrant Turquoise beads, accented with exquisite Heart Emeralds, Tourmaline, and Tanzanite, along with sparkling natural diamonds, all set in luxurious 18K Yellow Gold. A ",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_813186d9-cb23-4235-979e-32a1980b67b6.webp?v=1778227777",
       "images": [
@@ -478,13 +559,14 @@
       ],
       "rating": 4.1,
       "stock": 40,
-      "featured": false
+      "featured": false,
+      "id": "c53HUqHfjUU"
     },
     {
       "slug": "heartknot-chain",
       "title": "Heartknot Chain",
       "category": "Necklace",
-      "price": 917000.0,
+      "price": 917000,
       "description": "Heartknot Chain in 18K yellow gold features 204 round natural diamonds and our signature Heartknot motif on a layered fine chain. A bold statement piece with modern elegance.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0053copy_1.webp?v=1778053676",
       "images": [
@@ -495,7 +577,8 @@
       ],
       "rating": 4.2,
       "stock": 43,
-      "featured": false
+      "featured": false,
+      "id": "QAXEpPjjZHw"
     },
     {
       "slug": "split-flick-earrings",
@@ -512,7 +595,8 @@
       ],
       "rating": 4.3,
       "stock": 46,
-      "featured": false
+      "featured": false,
+      "id": "lRmLLytILhY"
     },
     {
       "slug": "snow-claw-climber-earring",
@@ -529,13 +613,14 @@
       ],
       "rating": 4.4,
       "stock": 49,
-      "featured": false
+      "featured": false,
+      "id": "xXnQDSHIRsA"
     },
     {
       "slug": "pear-dome-pave-ring",
       "title": "Pear Dome Pave Ring",
       "category": "Ring",
-      "price": 243000.0,
+      "price": 243000,
       "description": "Pear Dome Pave Ring in 18K yellow gold is set with 87 round natural diamonds in a pavé setting, forming a pear shape that extends halfway around the ring. A bold design with elegant brilliance.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0030copy_1_861fc704-2e88-440b-b5e9-ab25212a1906.webp?v=1777974445",
       "images": [
@@ -546,13 +631,14 @@
       ],
       "rating": 4.5,
       "stock": 6,
-      "featured": false
+      "featured": false,
+      "id": "9KHfztfKVA4"
     },
     {
       "slug": "dome-pave-ring",
       "title": "Dome Pave Ring",
       "category": "Ring",
-      "price": 200000.0,
+      "price": 200000,
       "description": "Dome Pave Ring in 14K yellow gold is set with 109 round natural diamonds in a bold pavé design. A signature piece created to make a striking statement on the pinky finger.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_fc2f60f5-12f0-4e87-8e61-aebb8528cb4c.webp?v=1777984130",
       "images": [
@@ -563,7 +649,8 @@
       ],
       "rating": 4.6,
       "stock": 9,
-      "featured": false
+      "featured": false,
+      "id": "dcq9L8OumM4"
     },
     {
       "slug": "polkadot-claw-diamond-earrings",
@@ -580,7 +667,8 @@
       ],
       "rating": 4.7,
       "stock": 12,
-      "featured": false
+      "featured": false,
+      "id": "pf7IAmFTJng"
     },
     {
       "slug": "classic-claw-diamond-earrings",
@@ -597,7 +685,8 @@
       ],
       "rating": 4.8,
       "stock": 15,
-      "featured": false
+      "featured": false,
+      "id": "Pih0RrxvyNE"
     },
     {
       "slug": "drop-claw-diamond-earrings",
@@ -614,7 +703,8 @@
       ],
       "rating": 4.9,
       "stock": 18,
-      "featured": false
+      "featured": false,
+      "id": "0iz3MaO13ac"
     },
     {
       "slug": "swirl-earrings",
@@ -631,13 +721,14 @@
       ],
       "rating": 4.1,
       "stock": 21,
-      "featured": false
+      "featured": false,
+      "id": "uJums3qJMlU"
     },
     {
       "slug": "yin-yang-t-bar-chain",
       "title": "Yin - Yang T-Bar Chain",
       "category": "Necklace",
-      "price": 941000.0,
+      "price": 941000,
       "description": "Yin-Yang T-Bar Chain in 14K Yellow Gold, set with 317 round natural diamonds. A unique symbol of balance and style, finished with radiant brilliance.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0009copy_0782b617-25ea-419a-92bd-749894f9ac51.webp?v=1777541681",
       "images": [
@@ -648,7 +739,8 @@
       ],
       "rating": 4.2,
       "stock": 24,
-      "featured": false
+      "featured": false,
+      "id": "sSfItx56AEo"
     },
     {
       "slug": "diamond-t-bar-chain",
@@ -665,7 +757,8 @@
       ],
       "rating": 4.3,
       "stock": 27,
-      "featured": false
+      "featured": false,
+      "id": "-KxELMWrnwQ"
     },
     {
       "slug": "pink-tourmaline-t-bar-chain",
@@ -682,13 +775,14 @@
       ],
       "rating": 4.4,
       "stock": 30,
-      "featured": false
+      "featured": false,
+      "id": "Ro3jqZmkyzI"
     },
     {
       "slug": "polkadot-t-bar-chain",
       "title": "Polkadot T-Bar Chain",
       "category": "Necklace",
-      "price": 635000.0,
+      "price": 635000,
       "description": "Introducing the Polkadot T-Bar. 14K yellow gold, illuminated with 129 round natural diamonds and 9 baguette natural diamonds, a statement of rare luxury.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_762558f7-8645-49a4-817e-33f2a1c2e694.webp?v=1777631203",
       "images": [
@@ -699,13 +793,14 @@
       ],
       "rating": 4.5,
       "stock": 33,
-      "featured": false
+      "featured": false,
+      "id": "XfpglrHxTGA"
     },
     {
       "slug": "midnight-diamond-dumbbell-t-bar-chain",
       "title": "Midnight Diamond Dumbbell T-Bar Chain",
       "category": "Necklace",
-      "price": 602000.0,
+      "price": 602000,
       "description": "Midnight Diamond Dumbbell T-Bar Chain in 14K yellow gold, set with 252 round natural diamonds. Finished with black rhodium detailing at the center for a bold and modern contrast.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0007_copy_1.webp?v=1777628833",
       "images": [
@@ -716,13 +811,14 @@
       ],
       "rating": 4.6,
       "stock": 36,
-      "featured": false
+      "featured": false,
+      "id": "tHfZGHOM2yY"
     },
     {
       "slug": "flick-t-bar-chain",
       "title": "Flick T-Bar Chain",
       "category": "Necklace",
-      "price": 943000.0,
+      "price": 943000,
       "description": "Designed for versatility, the Flick T-Bar Chain in 14K yellow gold features 207 round natural diamonds. Wear it as a complete statement or style the T-bar and chain separately.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0167copy.webp?v=1777536116",
       "images": [
@@ -733,7 +829,8 @@
       ],
       "rating": 4.7,
       "stock": 39,
-      "featured": false
+      "featured": false,
+      "id": "UK0li_SzZ0Y"
     },
     {
       "slug": "wave-baguette-bracelet",
@@ -750,13 +847,14 @@
       ],
       "rating": 4.8,
       "stock": 42,
-      "featured": false
+      "featured": false,
+      "id": "Vlw_1OnerQU"
     },
     {
       "slug": "anchor-t-bar",
       "title": "Anchor T-Bar",
       "category": "Necklace",
-      "price": 625000.0,
+      "price": 625000,
       "description": "A distinctive Anchor T-Bar necklace in 14K yellow gold, set with 133 natural round diamonds, designed to stand apart with quiet confidence and refined brilliance.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_ac22a1b9-57e7-49d6-aec0-474dfb43d499.webp?v=1776949802",
       "images": [
@@ -767,7 +865,8 @@
       ],
       "rating": 4.9,
       "stock": 45,
-      "featured": false
+      "featured": false,
+      "id": "eF1m6LEUp4g"
     },
     {
       "slug": "two-way-morden-mini-jhumki",
@@ -784,13 +883,14 @@
       ],
       "rating": 4.1,
       "stock": 48,
-      "featured": false
+      "featured": false,
+      "id": "jnzjOCGqjro"
     },
     {
       "slug": "wave-pear-drop-ring",
       "title": "Wave Pear Drop Ring",
       "category": "Ring",
-      "price": 202000.0,
+      "price": 202000,
       "description": "A sculptural wave in 18K yellow gold, crowned with a pear shaped natural diamond and traced with 84 vivid rubies, luminous and unforgettable.",
       "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_1.webp?v=1774693862",
       "images": [
@@ -801,7 +901,8 @@
       ],
       "rating": 4.2,
       "stock": 5,
-      "featured": false
+      "featured": false,
+      "id": "Dz_w5kmoN_I"
     },
     {
       "slug": "snow-pave-wave-hoop-earrings",
@@ -818,7 +919,8 @@
       ],
       "rating": 4.3,
       "stock": 8,
-      "featured": false
+      "featured": false,
+      "id": "Ani_jnRsqGQ"
     },
     {
       "slug": "diamond-pave-wave-bracelet",
@@ -835,7 +937,8 @@
       ],
       "rating": 4.4,
       "stock": 11,
-      "featured": false
+      "featured": false,
+      "id": "R4C1uZju1sg"
     },
     {
       "slug": "heart-emerald-wave-bracelet",
@@ -852,7 +955,9 @@
       ],
       "rating": 4.5,
       "stock": 14,
-      "featured": false
+      "featured": false,
+      "id": "Hrp_rjj7ZXM"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
