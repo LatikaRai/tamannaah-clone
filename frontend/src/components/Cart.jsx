@@ -1,34 +1,42 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { decQty, incQty, removeItem } from "../features/cart/cartSlice";
+import { asyncAddToCart, asyncDecreaseItemQty, asyncIncreaseItemQty, asyncLoadCart, asyncRemoveFromCart } from "../actions/cartActions";
+import { useEffect } from "react";
 
 const Cart = ({ setActiveTab }) => {
   const navigate = useNavigate();
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const { cart } = useSelector((state) => state.cartReducer);
 
-//   increasing the qty
+  //   increasing the qty
   const incItemQty = (product) => {
-    dispatch(incQty(product))
-  }
+    const addedItem = cart.find(item => item.slug === product.slug)
+    if (addedItem) {
+      dispatch(asyncIncreaseItemQty(product));
+    } else{
+      dispatch(asyncAddToCart(product))
+    }
+  };
 
-//   decreasing the qty
+  //   decreasing the qty
   const decItemQty = (product) => {
-    dispatch(decQty(product))
-  }
+    dispatch(asyncDecreaseItemQty(product));
+  };
 
-//   remove the item
-const rmvItem = (product) => {
-    dispatch(removeItem(product))
-}
+  //   remove the item
+  const rmvItem = (product) => {
+    dispatch(asyncRemoveFromCart(product));
+  };
 
-// price formatting
-const priceFormat = (price,qty) => {
-    const total = price * qty
-    return total.toLocaleString("en-IN")
-}
+  // price formatting
+  const priceFormat = (price, qty) => {
+    const total = price * qty;
+    return total.toLocaleString("en-IN");
+  };
+
 
   return (
     <div className="w-full h-screen pr-[1.3rem] text-[0.9rem] overflow-y-auto">
@@ -50,7 +58,10 @@ const priceFormat = (price,qty) => {
         ) : (
           <div className="w-full overflow-y-auto">
             {cart.map((product) => (
-              <div key={product.id} className="flex items-start gap-[1.6rem] py-[1.2rem] border-b border-gray-300">
+              <div
+                key={product.id}
+                className="flex items-start gap-[1.6rem] py-[1.2rem] border-b border-gray-300"
+              >
                 <div className="w-[25%] h-[8.9rem]">
                   <img
                     src={product.thumbnail}
@@ -64,15 +75,28 @@ const priceFormat = (price,qty) => {
                       {product.title}
                     </h2>
                     <div className="flex items-center gap-[0.8rem] border border-gray-300 w-fit py-[0.3rem] px-[0.9rem]">
-                      <i onClick={()=>decItemQty(product)} className="ri-subtract-line"></i>
+                      <i
+                        onClick={() => decItemQty(product)}
+                        className="ri-subtract-line"
+                      ></i>
                       <span className="text-[0.84rem]">{product.quantity}</span>
-                      <i onClick={()=>incItemQty(product)} className="ri-add-line"></i>
+                      <i
+                        onClick={() => incItemQty(product)}
+                        className="ri-add-line"
+                      ></i>
                     </div>
                   </div>
-                    <div className="flex items-center justify-between">
-                      <h2 className="font-semibold text-[0.9rem]">₹{priceFormat(product.price, product.quantity)}</h2>
-                      <span onClick={()=>rmvItem(product)} className="cursor-pointer underline text-[0.8rem]">Remove</span>
-                    </div>
+                  <div className="flex items-center justify-between">
+                    <h2 className="font-semibold text-[0.9rem]">
+                      ₹{priceFormat(product.price, product.quantity)}
+                    </h2>
+                    <span
+                      onClick={() => rmvItem(product)}
+                      className="cursor-pointer underline text-[0.8rem]"
+                    >
+                      Remove
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

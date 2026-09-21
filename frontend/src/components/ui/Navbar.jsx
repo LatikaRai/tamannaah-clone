@@ -8,6 +8,8 @@ const Navbar = ({activeTab,setActiveTab}) => {
 
   const { wishlist } = useSelector(state => state.wishlistReducer)
 
+  const { cart } = useSelector(state => state.cartReducer)
+
     const {pathname} = useLocation()
 
     const navbarOneRoutes = [
@@ -63,7 +65,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
 
   return (
     <div>
-      {showNavbarOne ? <Navbar1 wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
+      {showNavbarOne ? <Navbar1 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useOutletContext, useParams } from "react-router-dom";
 import ProductCard from "../components/ui/ProductCard";
-import { addToCart } from "../features/cart/cartSlice";
+import { asyncAddToCart } from "../actions/cartActions";
 
 const ProductDetails = () => {
 
@@ -16,7 +16,7 @@ const ProductDetails = () => {
 
   // add to cart
   const addToCartHandler = (item) => {
-    dispatch(addToCart(item))
+    dispatch(asyncAddToCart(item))
   }
 
   // loading guard

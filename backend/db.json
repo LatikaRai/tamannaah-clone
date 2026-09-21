@@ -1,6 +1,80 @@
 {
   "users": [],
-  "cart": [],
+  "cart": [
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "Td4cVKQScj4"
+    },
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "3yea2-7Z9OM"
+    },
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "Tb6izPpBZYM",
+      "quantity": null
+    },
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "ewCtR3AwLFE"
+    }
+  ],
   "wishlist": [
     {
       "slug": "blue-enamel-pav-ear-cuff",

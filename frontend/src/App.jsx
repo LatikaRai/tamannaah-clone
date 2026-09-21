@@ -3,6 +3,7 @@ import AppRoutes from "./routes/AppRoutes"
 import { useEffect } from 'react'
 import { asyncLoadProducts } from './actions/productActions'
 import { asyncLoadWishlist } from './actions/wishlistActions'
+import { asyncLoadCart } from './actions/cartActions'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -10,6 +11,7 @@ const App = () => {
   useEffect(()=>{
     dispatch(asyncLoadProducts())
     dispatch(asyncLoadWishlist())
+    dispatch(asyncLoadCart())
   },[dispatch])
   return <AppRoutes/>
 }

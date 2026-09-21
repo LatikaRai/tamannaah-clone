@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
-const Navbar2 = ({ wishlist, activeTab, setActiveTab, showNav }) => {
+const Navbar2 = ({ wishlist, cart, activeTab, setActiveTab, showNav }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
@@ -61,7 +61,7 @@ const Navbar2 = ({ wishlist, activeTab, setActiveTab, showNav }) => {
           onClick={() => setActiveTab("cart")}
           className={activeTab === "cart" ? "text-black" : navColor}
         >
-          Cart
+          Cart({cart.length})
         </div>
         
       </div>
