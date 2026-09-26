@@ -1,9 +1,14 @@
+import { useLocation } from "react-router-dom"
+import MainFooter from "./MainFooter"
+import HomeFooter from "./HomeFooter"
 
-const Footer = () => {
+const Footer = ({setActiveTab}) => {
+
+    const { pathname } = useLocation()
+
+    const isHomePage = pathname === '/'
   return (
-    <div>
-      
-    </div>
+     isHomePage ? <HomeFooter setActiveTab={setActiveTab} /> : <MainFooter/> 
   )
 }
 

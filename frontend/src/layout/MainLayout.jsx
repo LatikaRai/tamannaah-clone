@@ -5,6 +5,7 @@ import SideBar from "../components/SideBar";
 import { motion, AnimatePresence } from "motion/react";
 import { useNavigate } from "react-router-dom";
 import SortingTab from "../components/SortingTab";
+import Footer from "../components/ui/Footer";
 
 const MainLayout = () => {
   // create states of active tabs for the navbar to know on which the user has clicked
@@ -98,6 +99,8 @@ const MainLayout = () => {
           setSelectedSort,
         }}
       />
+
+      <Footer setActiveTab={setActiveTab} />
     </div>
   );
 };
