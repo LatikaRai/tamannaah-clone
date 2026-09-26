@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom"
 
 const HomeFooter = ({setActiveTab}) => {
+    const navigate = useNavigate()
   return (
     <div className="h-[40vh] w-full flex flex-col justify-between font-['ArboriaBook']">
         <div className="w-full px-[3.4rem] py-[1.8rem] flex items-start justify-between">
@@ -8,7 +10,9 @@ const HomeFooter = ({setActiveTab}) => {
             <h2 onClick={()=> {
                 setActiveTab('contact')
             }} className="cursor-pointer">Contact Us</h2>
-            <h2 className="cursor-pointer">Shipping Policy</h2>
+            <h2 onClick={()=>{
+                navigate('/policies/shipping-policy')
+            }} className="cursor-pointer">Shipping Policy</h2>
             <h2 className="cursor-pointer">Terms of Service</h2>
             <h2 className="cursor-pointer">Return and Cancellation Policy</h2>
         </div>

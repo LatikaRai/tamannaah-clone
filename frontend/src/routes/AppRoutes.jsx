@@ -22,6 +22,7 @@ import NewCollections from "../pages/NewCollections"
 import AboutUs from "../pages/AboutUs"
 import OurStore from "../pages/OurStore"
 import Cart from "../components/Cart"
+import ShippingPolicy from "../pages/ShippingPolicy"
 
 const AppRoutes = () => {
   return (
@@ -62,6 +63,9 @@ const AppRoutes = () => {
         <Route path="/collections/high-jewelry" element={<HighJewelry/>}/>
 
         <Route path="/product/:slug" element={<ProductDetails/>}/>
+
+        {/* footer */}
+        <Route path="/policies/shipping-policy" element={<ShippingPolicy/>} />
 
       </Route>
 
