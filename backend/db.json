@@ -1,64 +1,6 @@
 {
   "users": [],
-  "cart": [
-    {
-      "slug": "love-emerald-necklace",
-      "title": "Love Emerald Necklace",
-      "category": "Necklace",
-      "price": 5752000,
-      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
-      ],
-      "rating": 4.3,
-      "stock": 11,
-      "featured": true,
-      "id": "JmAXj0Har3Y",
-      "quantity": 2
-    },
-    {
-      "slug": "blue-enamel-pav-ear-cuff",
-      "title": "Blue Enamel Pavé Ear Cuff",
-      "category": "Earring",
-      "price": 180000,
-      "description": "A striking blend of modern glamour and elegance, this Blue Enamel Pavé Ear Cuff in 14K yellow gold shines with 74 round natural diamonds and rich blue enamel detailing.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_13.webp?v=1779780433",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0004copy_13.webp?v=1779780433",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_21.webp?v=1779780433",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0033copy_2.webp?v=1779780434",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0028copy_f4bb5c07-0198-4bdb-94e5-8cb69d0bc72d.webp?v=1779780434"
-      ],
-      "rating": 4.4,
-      "stock": 14,
-      "featured": true,
-      "id": "dUcNEbvqS6A",
-      "quantity": 1
-    },
-    {
-      "slug": "yellow-diamond-bracelet",
-      "title": "Yellow Diamond Bracelet",
-      "category": "Bracelet",
-      "price": 2150000,
-      "description": "Exquisitely crafted in 18K White Gold, this timeless Yellow Diamond Bracelet features 410 round natural diamonds accented by 14 captivating oval yellow diamonds. A classic expression of elegance, it r",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036copy_2.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107copy.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0036-Copy_2_copy.webp?v=1778658248",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0107-Copycopy.webp?v=1778658248"
-      ],
-      "rating": 4.1,
-      "stock": 5,
-      "featured": true,
-      "id": "hne5VY1hzaA",
-      "quantity": 1
-    }
-  ],
+  "cart": [],
   "wishlist": [
     {
       "slug": "blue-enamel-pav-ear-cuff",

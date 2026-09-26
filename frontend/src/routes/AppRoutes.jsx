@@ -25,6 +25,7 @@ import Cart from "../components/Cart"
 import ShippingPolicy from "../pages/ShippingPolicy"
 import TandC from "../pages/TandC"
 import ReturnPage from "../pages/ReturnPage"
+import Resources from "../pages/Resources"
 
 const AppRoutes = () => {
   return (
@@ -70,6 +71,7 @@ const AppRoutes = () => {
         <Route path="/policies/shipping-policy" element={<ShippingPolicy/>} />
         <Route path="/policies/terms-of-service" element={<TandC />} />
         <Route path="/policies/refund-policy" element={<ReturnPage />} />
+        <Route path="/blogs/news/akshaya-tritiya" element={<Resources />} />
 
       </Route>
 
