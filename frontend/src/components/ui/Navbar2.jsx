@@ -6,7 +6,7 @@ const Navbar2 = ({ wishlist, cart, activeTab, setActiveTab, showNav }) => {
   // to change the text color of nav in some pages
   const location = useLocation();
 
-  const isLightBg = ["/account/login","/account/register","/wishlist","/policies/shipping-policy"].includes(location.pathname) || location.pathname.startsWith("/product/");
+  const isLightBg = ["/account/login","/account/register","/wishlist","/policies/shipping-policy","/policies/terms-of-service"].includes(location.pathname) || location.pathname.startsWith("/product/");
 
   const navColor = isLightBg ? "text-black bg-white" : "text-white";
   return (

@@ -23,6 +23,7 @@ import AboutUs from "../pages/AboutUs"
 import OurStore from "../pages/OurStore"
 import Cart from "../components/Cart"
 import ShippingPolicy from "../pages/ShippingPolicy"
+import TandC from "../pages/TandC"
 
 const AppRoutes = () => {
   return (
@@ -66,6 +67,7 @@ const AppRoutes = () => {
 
         {/* footer */}
         <Route path="/policies/shipping-policy" element={<ShippingPolicy/>} />
+        <Route path="/policies/terms-of-service" element={<TandC />} />
 
       </Route>
 

@@ -13,7 +13,7 @@ const MainFooter = () => {
             <h2 onClick={()=>{
                 navigate('/policies/shipping-policy')
             }} className="cursor-pointer">Shipping Policy</h2>
-            <h2 className="cursor-pointer">Terms of Service</h2>
+            <h2 onClick={()=>{navigate('/policies/terms-of-service')}} className="cursor-pointer">Terms of Service</h2>
             <h2 className="cursor-pointer">Return and Cancellation Policy</h2>
         </div>
         <div className="text-[0.83rem] flex flex-col gap-[0.7rem]">
