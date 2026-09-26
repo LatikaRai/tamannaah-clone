@@ -1,8 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { decQty, incQty, removeItem } from "../features/cart/cartSlice";
-import { asyncAddToCart, asyncDecreaseItemQty, asyncIncreaseItemQty, asyncLoadCart, asyncRemoveFromCart } from "../actions/cartActions";
-import { useEffect } from "react";
+import { asyncDecreaseItemQty, asyncIncreaseItemQty, asyncRemoveFromCart } from "../actions/cartActions";
 
 const Cart = ({ setActiveTab }) => {
   const navigate = useNavigate();
@@ -13,12 +11,7 @@ const Cart = ({ setActiveTab }) => {
 
   //   increasing the qty
   const incItemQty = (product) => {
-    const addedItem = cart.find(item => item.slug === product.slug)
-    if (addedItem) {
       dispatch(asyncIncreaseItemQty(product));
-    } else{
-      dispatch(asyncAddToCart(product))
-    }
   };
 
   //   decreasing the qty
@@ -37,10 +30,15 @@ const Cart = ({ setActiveTab }) => {
     return total.toLocaleString("en-IN");
   };
 
+  // total checkout price
+  const totalPrice = () => {
+    const total = cart.reduce((acc,item) => acc + (item.price * item.quantity), 0)
+    return total.toLocaleString("en-IN")
+  }
 
   return (
     <div className="w-full h-screen pr-[1.3rem] text-[0.9rem] overflow-y-auto">
-      <div className="w-full flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
+      <div className="w-full h-[6vh] flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
         <h1>My Bag</h1>
         <i onClick={() => setActiveTab("")} className="ri-close-line"></i>
       </div>
@@ -56,7 +54,8 @@ const Cart = ({ setActiveTab }) => {
             </button>
           </div>
         ) : (
-          <div className="w-full overflow-y-auto">
+          <div className="w-full h-[85vh] flex flex-col justify-between">
+            <div className="w-full overflow-y-auto no-scrollbar">
             {cart.map((product) => (
               <div
                 key={product.id}
@@ -100,6 +99,15 @@ const Cart = ({ setActiveTab }) => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="w-full h-[15vh] py-[1.1rem] flex flex-col gap-[1.1rem] border-t border-gray-300">
+            <div className="w-full flex items-center justify-between font-semibold text-[0.85rem]">
+              <h2 className="uppercase">Total</h2>
+              <h2>₹{totalPrice()}</h2>
+            </div>
+            <button className="uppercase py-[0.6rem] bg-black text-white w-full text-center font-semibold">Proceed to checkout</button>
+            <span className="text-[0.6rem] italic">Shipping, taxes, and discount codes are calculated at checkout</span>
+          </div>
           </div>
         )}
       </div>

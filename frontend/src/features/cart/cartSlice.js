@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { a } from "motion/react-client";
 
 const initialState = {
   cart: [],
@@ -16,21 +15,14 @@ const cartSlice = createSlice({
 
     // add to
     addToCart: (state, action) => {
-      const product = action.payload;
-
-      const existingProduct = state.cart.find((item) => item.slug === product.slug);
-
-      if (existingProduct) existingProduct.quantity++;
-      else {
-        state.cart.push({ ...product, quantity: 1 });
-      }
+        state.cart.push(action.payload);
     },
     // increasing the quantity
     incQty: (state, action) => {
       const product = action.payload;
       const existingProduct = state.cart.find((item) => item.slug === product.slug);
       if (existingProduct) {
-        existingProduct.quantity++;
+        existingProduct.quantity += 1;
       }
     },
     // decreasing the quantity
@@ -41,12 +33,13 @@ const cartSlice = createSlice({
         if (existingProduct.quantity === 1) {
           state.cart = state.cart.filter((item) => item.slug !== product.slug);
         } else {
-          existingProduct.quantity--;
+          existingProduct.quantity -= 1;
         }
       }
     },
     // remove the item from cart
     removeItem: (state, action) => {
+      const product = action.payload
         state.cart = state.cart.filter((item) => item.slug !== product.slug);
       
     },

@@ -19,3 +19,12 @@
     font-family: "ArboriaBook";
     src: url("./assets/fonts/ArboriaBook.ttf") format(truetype);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
