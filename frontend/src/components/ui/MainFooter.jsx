@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-const MainFooter = () => {
+const MainFooter = ({setActiveTab}) => {
     const navigate = useNavigate()
   return (
     <div className="h-[40vh] w-full flex flex-col border-t border-gray-200 py-[0.8rem] justify-between font-['ArboriaBook']">
@@ -56,15 +56,21 @@ const MainFooter = () => {
             </div>
             <div className="flex flex-col gap-[0.7rem]">
                 <h1 className="font-semibold text-[0.8rem] pb-[0.6rem] ">SHIPPING TO INDIA</h1>
-            <h2>For any queries <span className="font-semibold underline cursor-pointer">Contact Us</span></h2>
+            <h2>For any queries <span onClick={()=>{setActiveTab('contact')}} className="font-semibold underline cursor-pointer">Contact Us</span></h2>
             </div>
         </div> 
         </div>
         <div className="w-full px-[3.4rem] py-[1.8rem] text-[0.8rem] border-t border-gray-200 flex items-center justify-between">
             <h2><i className="ri-copyright-line"></i> Tamannaah 2026</h2>
             <div className="w-[30%] flex items-center gap-[2.6rem]">
-                <h2 className="cursor-pointer">Terms of Service</h2>
-                <h2 className="cursor-pointer">Privacy Policy</h2>
+                <h2 onClick={()=>{
+                    navigate('/policies/terms-of-service')
+                    window.scrollTo(0,0)
+                }} className="cursor-pointer">Terms of Service</h2>
+                <h2 onClick={()=>{
+                    navigate('/policies/privacy-policy')
+                    window.scrollTo(0,0)
+                }} className="cursor-pointer">Privacy Policy</h2>
             </div>
         </div>
     </div>

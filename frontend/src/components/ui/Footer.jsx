@@ -8,7 +8,7 @@ const Footer = ({setActiveTab}) => {
 
     const isHomePage = pathname === '/'
   return (
-     isHomePage ? <HomeFooter setActiveTab={setActiveTab} /> : <MainFooter/> 
+     isHomePage ? <HomeFooter setActiveTab={setActiveTab} /> : <MainFooter setActiveTab={setActiveTab} /> 
   )
 }
 

@@ -1,64 +1,41 @@
-const TandC = () => {
+const PrivacyPolicy = () => {
   return (
     <div className="w-full font-['ArboriaBook'] text-[0.8rem] mt-[8vh] py-[6.3rem] flex items-center justify-center">
       <div className="w-[30%] flex flex-col gap-[1.3rem]">
         <div className="w-full text-justify flex flex-col pb-[0.9rem] gap-[0.7rem]">
-          <h1 className="font-semibold pb-[0.6rem]">TERMS AND CONDITIONS</h1>
+          <h1 className="font-semibold pb-[0.6rem]">PRIVACY POLICY</h1>
           <p className="text-gray-600">
-            These Terms & Conditions ("Terms") govern your access to and use of
-            the website https://tamannaah.com/ (the "Site") operated by
-            Tamannaah Bhatia Studioz. ("Tamannaah," "we," "us," or "our"). By
-            accessing or using the Site, you agree to be bound by these Terms.{" "}
-            <br />
-            Please read these terms of use carefully before using this website.
-            If you do not agree to this Terms of Use you may not use this
-            Website. By using this Website, you signify your explicit assent to
-            this Terms of Use as well as the Website's Privacy Policy (which is
-            hereby incorporated by reference herein). <br />
-            These Terms of Use sets out the legally binding terms of services
-            available on the Website as well as at the terms of use of this
-            Website. These Terms of Use along with the Privacy Policy extends to
-            both users, who visit the Website but do not transact business on
-            the Website ("Users / Guests") as well as users who are registered
-            with by the Website to transact business on the Website ("Members").{" "}
-            <br />
-            Tamannaah Santosh Bhatia is the sole proprietor of Tamannaah Fine
-            Jewelry. The Company reserves the right to modify or terminate any
-            portion of the Website or the Services offered by the Company for
-            any reason, without notice and without liability to you or any third
-            party. You are responsible for regularly reviewing these Terms of
-            Use so that you will be apprised of changes, if any. Nothing in
-            these Terms of Use should be construed to confer any rights to third
-            party beneficiaries. <br />
-            tamannaah.com, reserves the right to share any of your personal
-            information to comply with the orders of subpoenas, court orders or
-            other legal process. Your Personal Information may be disclosed
-            pursuant to such subpoenas, court order or legal process, which
-            shall be without notice to you. <br />
-            tamannaah.com may share collective information such as demographics
-            and Website or mobile application usage statistics with our
-            sponsors, advertisers or other third parties (such third parties do
-            not include witengold.com marketing partners and network providers).
-            When this type of information is shared, such parties do not have
-            access to your Personal Information. When you contact witengold.com
-            through any means such as Email, SMS, WhatsApp & calls,
-            witengold.com reserves the right to use your contact details for
-            marketing communications. You can unsubscribe from such
-            communications anytime you wish to do so.
+            This Privacy Policy describes how Tamannaah Bhatia Studioz. ("Tamannaah," "we," "us," or "our") collects, uses, and shares information about you when you visit or make a purchase from our website https://tamannaah.com/ (the "Site").
+          </p>
+          <p className="text-gray-600">
+            tamannaah.com owns all the information collected via the Website or applications installed on the website or native mobile applications.
+          </p>
+          <p className="text-gray-600">
+            As applicable, the information collected by tamannaah.com shall be used to contact you about the Website or native mobile applications and related news and Services available on the Website or native mobile applications; to monitor and improve the Website or native mobile applications; calculate the number of visitors to the Website or native mobile applications and to know the geographical locations of the visitors; update you on all the special offers available on the Website or native mobile applications and provide you with a better shopping experience. This includes sending emails intimating the various offers on the website or native mobile applications. You may at any time choose to unsubscribe from such email.
+          </p>
+          <p className="text-gray-600">
+            Some of your information may be shared with and Used by third parties who shall need to have access to Information, such as courier companies, credit card processing companies, vendors etc. to enable them and tamannaah.com perform their duties and fulfill your order requirements. tamannaah.com does not allow any unauthorized persons or organization to use any information that tamannaah.com may collect from you through the Website and native mobile applications.
+          </p>
+          <p className="text-gray-600">
+            However, tamannaah.com and our native mobile applications are not responsible for any information collected or shared or used by any other third party website or mobile applications due to your browser settings.
+          </p>
+          <p className="text-gray-600">
+            tamannaah.com, reserves the right to share any of your personal information to comply with the orders of subpoenas, court orders or other legal process. Your Personal Information may be disclosed pursuant to such subpoenas, court order or legal process, which shall be without notice to you.
+          </p>
+          <p className="text-gray-600">
+            tamannaah.com may share collective information such as demographics and Website or mobile application usage statistics with our sponsors, advertisers or other third parties (such third parties do not include tamannaah.com marketing partners and network providers). When this type of information is shared, such parties do not have access to your Personal Information. When you contact tamannaah.com through any means such as Email, SMS, WhatsApp & calls, tamannaah.com reserves the right to use your contact details for marketing communications. You can unsubscribe from such communications anytime you wish to do so.
           </p>
         </div>
         <div className="w-full text-justify flex flex-col pb-[0.9rem] gap-[0.7rem]">
-          <h1 className="font-semibold pb-[0.6rem]">1. ELIGIBILITY CRITERIA</h1>
-          <p className="text-gray-600">
-            If you are below 18 years of age, you are prohibited to
-            use/purchase/contract from or with this Website. Persons who are
-            incompetent to contract within the meaning of the Indian Contract
-            Act, 1872 are not eligible to use or transact through this Website.{" "}
-            <br />
-            Those who choose to access this Website from outside India are
-            responsible for compliance with local laws to the extent local laws
-            are applicable.
-          </p>
+          <h1 className="font-semibold pb-[0.6rem]">INFORMATION WE COLLECT:</h1>
+          <ul className="list-disc flex flex-col gap-[0.7rem]">
+            <li className="text-gray-600">
+            Personal Information: When you visit the Site, we collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site.
+          </li>
+          <li className="text-gray-600">Order Information: When you make a purchase or attempt to make a purchase through the Site, we collect certain information from you, including your name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number.</li>
+          <li className="text-gray-600">Device Information: We collect information about the device you are using to access the Site, including the hardware model, operating system version, unique device identifiers, and mobile network information.</li>
+          </ul>
+          
         </div>
         <div className="w-full text-justify flex flex-col pb-[0.9rem] gap-[0.7rem]">
           <h1 className="font-semibold pb-[0.6rem]">2. PRICING AND PAYMENT</h1>
@@ -153,4 +130,4 @@ const TandC = () => {
   );
 };
 
-export default TandC;
+export default PrivacyPolicy;

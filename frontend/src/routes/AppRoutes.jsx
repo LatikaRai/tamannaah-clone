@@ -26,6 +26,7 @@ import ShippingPolicy from "../pages/ShippingPolicy"
 import TandC from "../pages/TandC"
 import ReturnPage from "../pages/ReturnPage"
 import Resources from "../pages/Resources"
+import PrivacyPolicy from "../pages/PrivacyPolicy"
 
 const AppRoutes = () => {
   return (
@@ -72,6 +73,7 @@ const AppRoutes = () => {
         <Route path="/policies/terms-of-service" element={<TandC />} />
         <Route path="/policies/refund-policy" element={<ReturnPage />} />
         <Route path="/blogs/news/akshaya-tritiya" element={<Resources />} />
+        <Route path="/policies/privacy-policy" element={<PrivacyPolicy />} />
 
       </Route>
 
