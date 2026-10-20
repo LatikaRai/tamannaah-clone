@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 const MainFooter = ({setActiveTab}) => {
     const navigate = useNavigate()
   return (
-    <div className="h-[40vh] w-full flex flex-col border-t border-gray-200 py-[0.8rem] justify-between font-['ArboriaBook']">
+    <div className="h-[40vh] w-full hidden lg:flex flex-col border-t border-gray-200 py-[0.8rem] justify-between font-['ArboriaBook']">
         <div className="w-full px-[3.4rem] py-[1.8rem] flex items-start justify-between">
             <div className="text-[0.83rem] flex flex-col gap-[0.7rem]">
             <h1 className="font-semibold text-[0.8rem] pb-[0.6rem] ">CUSTOMER CARE</h1>

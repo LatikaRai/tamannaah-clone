@@ -22,22 +22,22 @@ const ContactTab = ({ setActiveTab}) => {
   return (
     <div>
       {btnClicked ? (
-        <div className="w-full h-screen pr-[1.3rem] text-[0.9rem] overflow-y-auto">
-          <div className="w-full flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
+        <div className="w-full h-screen lg:pr-[1.3rem] text-[0.75rem] lg:text-[0.9rem] overflow-y-auto">
+          <div className="w-full flex items-center justify-between p-[0.8rem] lg:pb-[1.2rem] lg:px-[1.4rem] border-b border-gray-300">
             <i onClick={()=> setBtnClicked(false)} className="ri-arrow-left-s-line text-[1rem]"></i>
             <h1>Make an Inquiry</h1>
             <i onClick={()=> setActiveTab('')} className="ri-close-large-line"></i>
           </div>
           <>
-          {isSubmitted ? <p className="px-[1.4rem] py-[2rem] ">
+          {isSubmitted ? <p className="lg:px-[1.4rem] px-[0.9rem] py-[2rem] text-justify">
               Thanks for contacting us. We'll get back to you as soon as possible.
             </p> : <>
-            <p className="px-[1.4rem] py-[2rem] ">
+            <p className="lg:px-[1.4rem] px-[0.9rem] py-[2rem] text-justify">
               Please send an enquiry and one of our experts will get back to you
               with appropriate reply as soon as possible.
             </p>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="p-[1.4rem] mb-[1.6rem] flex flex-col gap-[2.9rem]">
+            <form onSubmit={handleSubmit(onSubmit)} className="lg:p-[1.4rem] p-[0.9rem] mb-[1.6rem] flex flex-col gap-[2.9rem]">
               <div className="relative py-[0.4rem]">
                 <input
                   {...register("fullName", {
@@ -177,28 +177,33 @@ const ContactTab = ({ setActiveTab}) => {
           </>
         </div>
       ) : (
-        <div className="w-full pr-[1.3rem] text-[0.9rem]">
-          <div className="w-full flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
+        <div className="w-full lg:pr-[1.3rem] text-[0.75rem] lg:text-[0.9rem]">
+          <div className="w-full flex items-center justify-between p-[0.7rem] lg:pb-[1.2rem] lg:px-[1.4rem] border-b border-gray-300">
+            <div className="flex items-center gap-[0.9rem]">
+              <i onClick={()=>{
+                setActiveTab('shop')
+              }} className="ri-arrow-left-s-line"></i>
             <h1>Contact Us</h1>
+            </div>
             <i onClick={()=> setActiveTab('')} className="ri-close-large-line"></i>
           </div>
-          <div className="px-[1.4rem]">
-            <div className=" py-[3rem] border-b border-gray-300">
-              <p>
+          <div className="lg:px-[1.4rem]">
+            <div className=" py-[3rem] px-[0.7rem] lg:px-0 border-b border-gray-300">
+              <p className="text-justify">
                 Our team of experts is available to answer all your questions
                 from assistance with your orders to style advice and gift ideas.
               </p>
-              <h3 className="pt-[2.3rem] pb-[1.3rem] ">Make An Inquiry</h3>
+              <h3 className="pt-[2.3rem] pb-[1.3rem]">Make An Inquiry</h3>
               <button
                 onClick={() => {
                   setBtnClicked(true);
                 }}
-                className="w-full border py-[0.6rem] text-[0.8rem] uppercase font-semibold text-gray-800 hover:bg-black hover:text-white transition-all"
+                className="w-full border py-[0.6rem] text-[0.7rem] lg:text-[0.8rem] uppercase font-semibold text-gray-800 hover:bg-black hover:text-white transition-all"
               >
                 Send us a message
               </button>
             </div>
-            <div className=" py-[1.4rem] border-b border-gray-300">
+            <div className=" py-[1.4rem] px-[0.7rem] lg:px-0 border-b border-gray-300">
               <p>Call Us: +91 89769 66012, +91 89769 66013</p>
               <h3 className="text-[0.8rem] text-gray-500">
                 Monday to Saturday 11 am to 7 pm
