@@ -27,6 +27,7 @@ import TandC from "../pages/TandC"
 import ReturnPage from "../pages/ReturnPage"
 import Resources from "../pages/Resources"
 import PrivacyPolicy from "../pages/PrivacyPolicy"
+import Flick from "../pages/Flick"
 
 const AppRoutes = () => {
   return (
@@ -49,6 +50,7 @@ const AppRoutes = () => {
         <Route path="/collections/bracelets" element={<BraceletCollections />}/>
         <Route path="/collections/all-jewellery" element={<AllCollections />}/>
         <Route path="/collections/new" element={<NewCollections />}/>
+        <Route path="/collections/the-flick" element={<Flick/>}/>
 
 
         {/* about tab */}
@@ -57,7 +59,9 @@ const AppRoutes = () => {
         <Route path="/about-us/our-store" element={<OurStore />} />
 
 
+        {/* search tab */}
         <Route path="/search" element={<Search/>}/>
+        
         <Route path="/account/login" element={<Account/>}/>
         <Route path="/account/register" element={<Register/>}/>
         <Route path="/wishlist" element={<Wishlist/>}/>

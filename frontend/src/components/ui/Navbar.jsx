@@ -28,7 +28,8 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/shop/tamannah-favourite',
         '/about-us/meet-tamannaah',
         '/about-us',
-        '/about-us/our-store'
+        '/about-us/our-store',
+        '/collections/the-flick'
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)
