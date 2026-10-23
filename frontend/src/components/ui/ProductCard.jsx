@@ -37,10 +37,10 @@ const ProductCard = ({ product, viewImages = "four" }) => {
           navigate(`/product/${product.slug}`);
           window.scrollTo(0, 0);
         }}
-        className="w-full h-[47vh] lg:hidden"
+        className="w-[90%] h-[47vh] snap-start shrink-0 lg:hidden"
       >
         <div
-          onMouseEnter={() => {
+          onMouseEnter={() => { 
             setCurrentIdx(1);
             setIsHovered(true);
           }}
