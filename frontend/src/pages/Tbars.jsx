@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import tbarDesktop from "../assets/images/tbar-desktop.jpg";
+import tbarMobile from "../assets/images/tbarMobile.jpg";
 import CollectionLayout from "../components/ui/CollectionLayout";
 
 const Tbars = () => {
@@ -11,6 +12,7 @@ const Tbars = () => {
   return (
     <CollectionLayout
       heroImage={tbarDesktop}
+      mobileHeroImage={tbarMobile}
       heroTitle={"T-bar collection"}
       collectionTitle={"T-Bar"}
       description={`Inspired by the iconic jewellery clasp, the T-Bar collection

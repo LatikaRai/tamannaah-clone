@@ -1,5 +1,6 @@
 import CollectionLayout from "../components/ui/CollectionLayout"
 import canvasImg from "../assets/images/canvas.jpg";
+import canvasMobileImg from "../assets/images/canvasMobile.jpg";
 import canvasImg2 from "../assets/images/canvas2.jpg";
 import canvasImg3 from "../assets/images/canvas3.jpg";
 import canvasVid from "../assets/videos/canvas.mp4";
@@ -19,6 +20,7 @@ const Canvas = () => {
     <div>
       <CollectionLayout
         heroImage={canvasImg}
+        mobileHeroImage={canvasMobileImg}
         heroTitle={'Canvas'}
         collectionTitle={'Canvas - The quiet power of classics.'}
         description={`Canvas is our foundation collection - clean, versatile, and timeless. These are your forever pieces: pared-back silhouettes with an edge, designed to be the first layer of your jewellery wardrobe.From hoops to huggies, chains to studs, these are the pieces you'll reach for every day - and still be wearing ten years from now.`}

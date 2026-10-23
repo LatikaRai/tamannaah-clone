@@ -1,5 +1,6 @@
 import CollectionLayout from "../components/ui/CollectionLayout"
 import flickImg1 from "../assets/images/flick1.jpg";
+import flickMobileImg from "../assets/images/flick1.jpg";
 import flickImg2 from "../assets/images/flick2.jpg";
 import flickImg3 from "../assets/images/flick3.jpg";
 import flickVid from "../assets/videos/flick.mp4";
@@ -12,6 +13,7 @@ const Flick = () => {
     <>
     <CollectionLayout
         heroImage={flickImg1}
+        mobileHeroImage={flickMobileImg}
         heroTitle={'The Flick'}
         collectionTitle={'The Flick - Not just a link. A language.'}
         description={`Our Flick collection introduces a signature silhouette, distinguished by a subtle flick in its form — a soft rebellion against the ordinary. Designed to layer, loop, and live in, these pieces offer movement and presence in every glance.`}
