@@ -1,4 +1,5 @@
 import aboutUsImg from "../assets/images/aboutus.jpg";
+import aboutUsMobileImg from "../assets/images/aboutusMobile.jpg";
 import aboutUs2Img from "../assets/images/aboutus2.jpg";
 import aboutUs3Img from "../assets/images/aboutus3.jpg";
 import aboutUs4Img from "../assets/images/aboutus4.jpg";
@@ -16,16 +17,16 @@ const AboutUs = () => {
   return (
     <div className="w-full font-['ArboriaBook']">
       <div
-        style={{ backgroundImage: `url(${aboutUsImg})` }}
+        style={{ backgroundImage: `url(${window.innerWidth < 1024 ? aboutUsMobileImg : aboutUsImg})` }}
         className="w-full h-screen bg-cover bg-center flex items-end justify-center "
       >
         <h2 className="uppercase text-white py-[1.3rem] text-shadow-sm text-center font-semibold text-[1.05rem] tracking-wide">
           About us
         </h2>
       </div>
-      <div className="w-full h-screen flex">
-        <img src={aboutUs2Img} className="w-1/2 h-full object-center object-cover" alt="" />
-        <div className="w-1/2 h-full text-justify flex items-center justify-center px-[7.6rem] ">
+      <div className="w-full lg:h-screen flex flex-col-reverse lg:flex-row">
+        <img src={aboutUs2Img} className="w-full h-screen lg:w-1/2 lg:h-full object-center object-cover" alt="" />
+        <div className="lg:w-1/2 py-[4.6rem] px-[0.9rem] h-full text-justify flex items-center justify-center lg:py-0 lg:px-[7.6rem] ">
         <div className="flex flex-col gap-[2.1rem]">
           <h1 className="font-semibold pb-3">TAMANNAAH FINE JEWELLERY</h1>
         <h2 className="text-[16.6px]">Beyond the Occasion</h2>
@@ -34,17 +35,17 @@ const AboutUs = () => {
         </div>
         </div>
       </div>
-        <video className="pt-[4vh]" autoPlay muted loop src={aboutUsVideo}></video>
-        <div className="px-[2.6rem] py-[4.4rem] text-justify flex items-start justify-between">
+        <video className="pt-[4vh] w-full h-screen lg:h-auto object-cover" autoPlay muted loop src={aboutUsVideo}></video>
+        <div className="px-[0.9rem] lg:px-[2.6rem] py-[4.4rem] text-justify lg:flex items-start justify-between">
           <h1 className="font-semibold">REDEFINING BOUNDARIES</h1>
-          <p className="w-[36%] text-[16.6px]">At the heart of our philosophy is a belief that fine jewellery should be functional, expressive, and instinctively wearable. We believe that true luxury should feel comfortable — that glamour is at its best when it moves with you, not when it asks you to adjust to it. Our designs are not tied to a place, season, or cultural code; they are shaped instead by the universal dualities that define us — softness and structure, grounding and expansion, the intimate and the iconic. This neutrality makes our pieces endlessly versatile and timeless.</p>
+          <p className="pt-[2.7rem] lg:w-[36%] lg:pt-0 text-[16.6px] text-justify">At the heart of our philosophy is a belief that fine jewellery should be functional, expressive, and instinctively wearable. We believe that true luxury should feel comfortable — that glamour is at its best when it moves with you, not when it asks you to adjust to it. Our designs are not tied to a place, season, or cultural code; they are shaped instead by the universal dualities that define us — softness and structure, grounding and expansion, the intimate and the iconic. This neutrality makes our pieces endlessly versatile and timeless.</p>
         </div>
-        <div className="w-full h-screen flex">
-          <img className="w-1/2 h-full object-center object-cover" src={aboutUs3Img} alt="" />
-          <img className="w-1/2 h-full object-center object-cover" src={aboutUs4Img} alt="" />
+        <div className="w-full lg:h-screen lg:flex">
+          <img className="w-full h-screen lg:w-1/2 lg:h-full object-center object-cover" src={aboutUs3Img} alt="" />
+          <img className="w-full h-screen lg:w-1/2 lg:h-full object-center object-cover" src={aboutUs4Img} alt="" />
         </div>
-        <div className="w-full h-screen flex">
-          <div className="w-1/2 h-full px-[7.6rem] flex items-center justify-center">
+        <div className="w-full lg:h-screen lg:flex">
+          <div className="px-[0.9rem] py-[4.6rem] lg:w-1/2 lg:h-full lg:py-0 lg:px-[7.6rem] flex items-center justify-center">
             <div className="text-[16.6px] text-justify flex flex-col gap-[1.6rem]">
               <p>From solid gold hoops to modern mangalsutras, piercing pieces to statement chains, Tamannaah redefines what fine jewellery looks like — and how it's worn.</p>
               <p>Because we don't just believe in big milestones, we believe in your moments.</p>
@@ -52,33 +53,33 @@ const AboutUs = () => {
               <p>Tamannaah is fine jewellery, beyond the occasion.</p>
             </div>
           </div>
-          <img className="w-1/2 h-full object-center object-cover" src={aboutUs5Img} alt="" />
+          <img className="w-full h-screen lg:w-1/2 lg:h-full object-center object-cover" src={aboutUs5Img} alt="" />
         </div>
-        <div className="w-full h-screen flex">
-          <img className="w-1/2 h-full" src={aboutUs6Img} alt="" />
-          <div className="w-1/2 h-full flex items-center justify-center">
-            <div className="px-[2.7rem] flex flex-col items-center text-[16.6px]">
-              <img className="w-[45%] pb-[1.4rem] object-cover object-center" src={aboutUs7Img} alt="" />
-              <h1 className="font-semibold uppercase text-[1rem]">Plumptious - Bold, bulbous, and joyfully voluminous.</h1>
-              <p className="text-center leading-5"><span className="italic">Plumptious</span> is our most sculptural collection — featuring inflated forms, generous curves, and rounded silhouettes that exude softness with strength. These are pieces designed to be seen, felt, and remembered.</p>
+        <div className="w-full lg:h-screen lg:flex">
+          <img className="w-full h-screen object-cover object-center lg:w-1/2 lg:h-full" src={aboutUs6Img} alt="" />
+          <div className="w-full lg:w-1/2 lg:h-full flex items-center justify-center">
+            <div className="px-[0.9rem] py-[4.6rem] lg:py-0 lg:px-[2.7rem] flex flex-col items-center text-[16.6px]">
+              <img className="lg:w-[45%] pb-[1.4rem] object-cover object-center" src={aboutUs7Img} alt="" />
+              <h1 className="font-semibold uppercase text-[0.95rem] lg:text-[1rem]">Plumptious - Bold, bulbous, and joyfully voluminous.</h1>
+              <p className="pt-2 text-[0.95rem] lg:text-[1rem] lg:pt-0 text-center leading-5"><span className="italic">Plumptious</span> is our most sculptural collection — featuring inflated forms, generous curves, and rounded silhouettes that exude softness with strength. These are pieces designed to be seen, felt, and remembered.</p>
             </div>
           </div>
         </div>
         <img className="w-full h-screen object-cover object-center" src={aboutUs8Img} alt="" />
         <div className="w-full">
           <h1 className="uppercase font-semibold text-center py-[2.6rem]">Discover More</h1>
-          <div className="w-full h-screen flex">
+          <div className="w-full lg:h-screen lg:flex">
             <div onClick={()=>{
               navigate('/collections/new')
               window.scrollTo(0,0)
-              }} style={{backgroundImage: `url(${aboutUs9Img})`}} className="bg-cover bg-center w-1/2 h-full uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
+              }} style={{backgroundImage: `url(${aboutUs9Img})`}} className="bg-cover bg-center w-full h-screen lg:w-1/2 lg:h-full uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
             <h1 className="font-semibold tracking-wider pb-[0.3rem]">NEW COLLECTION</h1>
             <span className="text-[1.1rem] underline cursor-pointer">Explore NEW COLLECTION</span>
             </div>
             <div onClick={()=>{
               navigate('/collections/all-jewellery')
               window.scrollTo(0,0)
-              }} style={{backgroundImage: `url(${aboutUs10Img})`}} className="bg-cover bg-center w-1/2 h-full uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
+              }} style={{backgroundImage: `url(${aboutUs10Img})`}} className="bg-cover bg-center w-full h-screen lg:w-1/2 lg:h-full uppercase text-white flex flex-col items-center justify-end py-[1.3rem]">
             <h1 className="font-semibold tracking-wider pb-[0.3rem]">All Jewellery</h1>
             <span className="text-[1.1rem] underline cursor-pointer">Explore All Jewellery</span>
             </div>
