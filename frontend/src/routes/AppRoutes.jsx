@@ -28,6 +28,7 @@ import ReturnPage from "../pages/ReturnPage"
 import Resources from "../pages/Resources"
 import PrivacyPolicy from "../pages/PrivacyPolicy"
 import Flick from "../pages/Flick"
+import Canvas from "../pages/Canvas"
 
 const AppRoutes = () => {
   return (
@@ -51,6 +52,7 @@ const AppRoutes = () => {
         <Route path="/collections/all-jewellery" element={<AllCollections />}/>
         <Route path="/collections/new" element={<NewCollections />}/>
         <Route path="/collections/the-flick" element={<Flick/>}/>
+        <Route path="/collections/canvas" element={<Canvas/>}/>
 
 
         {/* about tab */}

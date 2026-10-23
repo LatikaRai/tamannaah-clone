@@ -29,7 +29,8 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/about-us/meet-tamannaah',
         '/about-us',
         '/about-us/our-store',
-        '/collections/the-flick'
+        '/collections/the-flick',
+        '/collections/canvas',
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)

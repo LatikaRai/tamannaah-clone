@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,products}) => {
     const {pathname} = useLocation()
 
-    const heroTitlePositionChange = ['/shop/tamannah-favourite','/collections/high-jewelry','/collections/the-flick'].includes(pathname)
+    const heroTitlePositionChange = ['/shop/tamannah-favourite','/collections/high-jewelry','/collections/the-flick','/collections/canvas'].includes(pathname)
 
   return (
     <div>
@@ -18,7 +18,7 @@ const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,prod
       <div className="w-full">
         <div className='w-full h-[50vh] lg:h-[48vh] flex flex-col justify-center gap-[2.6rem] lg:flex-row lg:items-center lg:justify-between px-[0.9rem] lg:px-[2.6rem]'>
           <h1 className="text-[0.9rem] lg:text-[1.05em] w-[60%] lg:w-full tracking-tighter uppercase font-['SaaSeries']">{collectionTitle}</h1>
-          <p className="lg:w-[36%] text-[0.85rem] lg:text-[16.6px] font-['ArboriaBook'] leading-6 text-justify">
+          <p className="lg:w-[50%] text-[0.85rem] lg:text-[16.6px] font-['ArboriaBook'] leading-6 text-justify">
             {description}
           </p>
         </div>
