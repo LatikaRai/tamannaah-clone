@@ -1,6 +1,6 @@
 import CollectionLayout from "../components/ui/CollectionLayout"
 import flickImg1 from "../assets/images/flick1.jpg";
-import flickMobileImg from "../assets/images/flick1.jpg";
+import flickMobileImg from "../assets/images/flickMobile.jpg";
 import flickImg2 from "../assets/images/flick2.jpg";
 import flickImg3 from "../assets/images/flick3.jpg";
 import flickVid from "../assets/videos/flick.mp4";

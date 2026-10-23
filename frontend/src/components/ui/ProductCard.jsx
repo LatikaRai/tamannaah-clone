@@ -6,7 +6,7 @@ import {
   asyncRemoveFromWishlist,
 } from "../../actions/wishlistActions";
 
-const ProductCard = ({ product, viewImages = "four" }) => {
+const ProductCard = ({ product, viewImages = "four"}) => {
   const dispatch = useDispatch();
 
   const [currentIdx, setCurrentIdx] = useState(0);

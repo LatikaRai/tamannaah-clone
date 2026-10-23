@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ProductCard from "./ProductCard";
 import SortingTab from "../SortingTab";
 import { useOutletContext } from "react-router-dom";
+import ProductCardMobile from "./ProductCardMobile";
 
 const ProductsListingLayout = ({
   products,
@@ -13,6 +14,7 @@ const ProductsListingLayout = ({
   setSelectedSort,
 }) => {
   const [viewImages, setViewImages] = useState("four");
+  const [viewImagesMobile, setViewImagesMobile] = useState("two");
 
   const { sortingTab, setSortingTab } = useOutletContext();
 
@@ -50,12 +52,67 @@ const ProductsListingLayout = ({
     filteredProducts.sort((a, b) => b.price - a.price);
   }
 
-  useEffect(()=>{
-    
-  })
 
   return (
-    <div className="w-full relative px-[2.5em]">
+    <>
+    {/* for mobile */}
+    <div className="w-full relative px-[0.9rem] lg:hidden">
+      <div className="w-full h-[30vh]"></div>
+      <div className="w-full flex items-center justify-between pb-[2.5em] text-[0.9rem]">
+        <div className="flex items-center gap-2">
+          <h3>View:</h3>
+          <h3
+            onClick={() => {
+              setViewImagesMobile("two");
+            }}
+            className={`${viewImagesMobile === "two" ? "text-black underline underline-offset-2" : "text-gray-400"}`}
+          >
+            Two
+          </h3>
+          <h3
+            onClick={() => {
+              setViewImagesMobile("one");
+            }}
+            className={`${viewImagesMobile === "one" ? "text-black underline underline-offset-2" : "text-gray-400"}`}
+          >           
+            One
+          </h3>
+        </div>
+        <div
+          onClick={() => setSortingTab(true)}
+          className={`${sortingTab ? "hidden" : "block"}`}
+        >
+          Filter & Sort
+        </div>
+        <>
+          {sortingTab && (
+            <SortingTab
+              selectedSort={selectedSort}
+              setSelectedSort={setSelectedSort}
+              selectedStatus={selectedStatus}
+              setSelectedStatus={setSelectedStatus}
+              selectedCtg={selectedCtg}
+              setSelectedCtg={setSelectedCtg}
+              setSortingTab={setSortingTab}
+            />
+          )}
+        </>
+      </div>
+      <div className="w-full h-auto flex flex-wrap items-center gap-[0.9rem]">
+        {filteredProducts.map((product) => {
+          return (
+            <ProductCardMobile
+            key={product.slug}
+            product={product} 
+            viewImagesMobile={viewImagesMobile}
+            />
+          );
+        })}
+      </div>
+    </div>
+
+    {/* for desktop */}
+    <div className="hidden lg:block w-full relative px-[2.5em]">
       <div className="w-full h-[30vh]"></div>
       <div className="w-full flex items-center justify-between pb-[2.5em] text-[0.9rem]">
         <div className="flex items-center gap-2">
@@ -109,6 +166,7 @@ const ProductsListingLayout = ({
         })}
       </div>
     </div>
+    </>
   );
 };
 
