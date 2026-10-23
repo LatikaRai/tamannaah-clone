@@ -10,6 +10,7 @@ const ShopTab = ({ setActiveTab, setPendingRoute}) => {
     const handleNavigate = (path) => {
         setPendingRoute(path)
         setActiveTab(null)
+        window.scrollTo(0,0)
     }
 
   return (

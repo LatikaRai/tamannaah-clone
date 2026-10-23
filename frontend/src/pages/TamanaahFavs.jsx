@@ -1,5 +1,5 @@
-import ProductCard from "../components/ui/ProductCard";
 import tamanFavImg from "../assets/images/taman-fav.jpg";
+import tamanFavMobileImg from "../assets/images/tamFavMobile.jpg";
 import favourite from "../assets/videos/favourite.mp4";
 import { useSelector } from "react-redux";
 import CollectionLayout from "../components/ui/CollectionLayout";
@@ -14,6 +14,7 @@ const MostPopular = () => {
     <div>
       <CollectionLayout
       heroImage={tamanFavImg}
+      mobileHeroImage={tamanFavMobileImg}
       heroTitle={"Tamannaah's Favourites"}
       collectionTitle={"Tamanaah's go to pieces for every occasion"}
       description={`Curated from pieces she returns to again and again, this selection

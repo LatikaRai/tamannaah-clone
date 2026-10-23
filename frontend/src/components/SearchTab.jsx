@@ -1,6 +1,9 @@
-import { NavLink } from "react-router-dom"
-
-const SearchTab = ({setActiveTab}) => {
+const SearchTab = ({setActiveTab,setPendingRoute}) => {
+  const handleNavigate = (path) => {
+        setPendingRoute(path)
+        setActiveTab(null)
+        window.scrollTo(0,0)
+    }
   return (
     <div>
       {/* for desktop */}
@@ -10,9 +13,9 @@ const SearchTab = ({setActiveTab}) => {
         <input type="text" placeholder="Type Your Search"/>
       </div>
       <h2 className="text-gray-400 font-thin py-[0.8em]">Trending Now</h2>
-      <NavLink to={'/collections/canvas'} className={'font-thin'}>Canvas</NavLink>
-      <NavLink to={'/collections/the-flick'} className={'font-thin'}>The Flick</NavLink>
-      <NavLink to={'/collections/plumptious'} className={'font-thin'}>Plumptious</NavLink>
+      <div onClick={()=>handleNavigate('/collections/canvas')} className={'font-thin'}>Canvas</div>
+      <div onClick={()=>handleNavigate('/collections/the-flick')} className={'font-thin'}>The Flick</div>
+      <div onClick={()=>handleNavigate('/collections/plumptious')} className={'font-thin'}>Plumptious</div>
     </div>
 
     {/* for mobile */}
@@ -29,9 +32,9 @@ const SearchTab = ({setActiveTab}) => {
       </div>
       <div className="text-[0.8rem] flex flex-col gap-[0.9rem]">
         <h2 className="text-gray-400 font-thin py-[0.8em]">Trending Now</h2>
-      <NavLink to={'/collections/canvas'} className={'font-thin'}>Canvas</NavLink>
-      <NavLink to={'/collections/the-flick'} className={'font-thin'}>The Flick</NavLink>
-      <NavLink to={'/collections/plumptious'} className={'font-thin'}>Plumptious</NavLink>
+      <div onClick={()=>handleNavigate('/collections/canvas')} className={'font-thin'}>Canvas</div>
+      <div onClick={()=>handleNavigate('/collections/the-flick')} className={'font-thin'}>The Flick</div>
+      <div onClick={()=>handleNavigate('/collections/plumptious')} className={'font-thin'}>Plumptious</div>
       </div>
     </div>
     </div>

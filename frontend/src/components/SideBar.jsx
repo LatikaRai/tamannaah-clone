@@ -38,8 +38,8 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
         </div>  
         <div>
             {activeTab === 'shop' && <ShopTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
-            {activeTab === 'about' && <AboutTab/>}
-            {activeTab === 'search' && <SearchTab setActiveTab={setActiveTab}/>}
+            {activeTab === 'about' && <AboutTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
+            {activeTab === 'search' && <SearchTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
         </div>
         <div className={`${activeTab === "search" ? "hidden" : "flex"} w-full text-[0.8rem] mt-auto items-center justify-between`}>
           <div onClick={()=>{
