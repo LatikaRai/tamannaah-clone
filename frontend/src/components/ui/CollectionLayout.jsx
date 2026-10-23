@@ -1,16 +1,16 @@
 import { useLocation } from "react-router-dom";
 import ProductCard from "./ProductCard";
 
-const CollectionLayout = ({heroImage, heroTitle,collectionTitle,description,products}) => {
+const CollectionLayout = ({heroImage, mobileHeroImage, heroTitle,collectionTitle,description,products}) => {
     const {pathname} = useLocation()
 
-    const heroTitlePositionChange = ['/shop/tamannah-favourite','/collections/high-jewelry','/collections/the-flick','/collections/canvas'].includes(pathname)
+    const heroTitlePositionChange = ['/shop/tamannah-favourite','/collections/high-jewelry','/collections/the-flick','/collections/canvas','/collections/plumptious'].includes(pathname)
 
   return (
     <div>
       <div
-      style={{backgroundImage: `url(${heroImage})`}}
-       className={`w-full h-screen font-["ArboriaBook"] flex justify-center bg-cover bg-center ${heroTitlePositionChange ? 'items-end' : 'items-center'}`}>
+      style={{backgroundImage: `url(${window.innerWidth < 1024 ? mobileHeroImage : heroImage})`}}
+       className={`w-full h-screen font-["ArboriaBook"] flex justify-center bg-cover bg-right lg:bg-center ${heroTitlePositionChange ? 'items-end' : 'items-center'}`}>
         <h2 className={`uppercase text-white py-[1.3rem] text-shadow-sm text-center  ${heroTitlePositionChange ? 'font-semibold text-[1.05rem] tracking-wide' : 'font-thin text-[1.1rem]'}`}>
           {heroTitle}
         </h2>

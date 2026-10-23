@@ -31,6 +31,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
         '/about-us/our-store',
         '/collections/the-flick',
         '/collections/canvas',
+        '/collections/plumptious',
     ]
 
     const showNavbarOne = navbarOneRoutes.includes(pathname)
