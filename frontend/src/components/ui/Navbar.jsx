@@ -66,7 +66,7 @@ const Navbar = ({activeTab,setActiveTab}) => {
 
   return (
     <div>
-      {showNavbarOne ? <Navbar1 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav}/>}
+      {showNavbarOne ? <Navbar1 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} scrollY={scrollY} /> : <Navbar2 cart={cart} wishlist={wishlist} activeTab={activeTab} setActiveTab={setActiveTab} showNav={showNav} />}
     </div>
   )
 }
