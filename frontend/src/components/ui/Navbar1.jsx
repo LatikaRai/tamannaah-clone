@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
@@ -29,6 +29,8 @@ const Navbar1 = ({
   const isLightBg = isScrolled || lightBgPages.includes(location.pathname);
 
   const navColor = isLightBg ? "text-black" : "text-white";
+
+  const navigate = useNavigate()
 
   return (
     <nav>
@@ -140,7 +142,10 @@ const Navbar1 = ({
           </Link>
         )}
           <div className="w-[10%] flex items-center text-[1.05rem] mr-[0.9rem] gap-[1.2rem]">
-            <i className="ri-poker-hearts-line"></i>
+            <i onClick={()=> {
+              navigate('/wishlist')
+              window.scrollTo(0,0)
+              }} className="ri-poker-hearts-line"></i>
             <i className="ri-shopping-bag-line"></i>
           </div>
       </motion.div>

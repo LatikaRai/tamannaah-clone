@@ -59,22 +59,58 @@
       "id": "FGqfc7yBPGg"
     },
     {
-      "slug": "baby-diamond-flick-earring",
-      "title": "Baby Diamond Flick Earring",
-      "category": "Earring",
-      "price": 224000,
-      "description": "Baby Diamond Flick Earrings crafted in 14K yellow gold, featuring 96 natural round diamonds that create a radiant sparkle and add a touch of elegance to their delicate, contemporary design.",
-      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0019copy_2.webp?v=1780905585",
+      "slug": "polka-dot-link-t-bar-chain",
+      "title": "Polka Dot Link T-Bar Chain",
+      "category": "Necklace",
+      "price": 1207000,
+      "description": "Polka Dot Link T-Bar Chain in 18K yellow gold, accented with 82 round natural diamonds and 11 baguette natural diamonds, blending playful detail with refined geometric brilliance.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0019copy_2.webp?v=1780905585",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_31.webp?v=1780905585",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0033copy_3.webp?v=1780905585",
-        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_4.webp?v=1780905585"
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005copy_7.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copycopy.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0005-Copy_2_copy.webp?v=1779693392",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_16.webp?v=1779693392"
       ],
-      "rating": 4.6,
-      "stock": 20,
+      "rating": 4.2,
+      "stock": 8,
       "featured": true,
-      "id": "ZtirELWGVig"
+      "id": "_O6eYIWYIWg"
+    },
+    {
+      "slug": "love-emerald-necklace",
+      "title": "Love Emerald Necklace",
+      "category": "Necklace",
+      "price": 5752000,
+      "description": "Elegant and timeless, this 18K yellow gold necklace features 30 heart-shaped emeralds radiating rich green brilliance. A perfect blend of romance and luxury, designed to make every moment shine.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010copy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0029copy_2.webp?v=1780382687",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0010-Copycopy_1.webp?v=1780382688",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0024copy_1.webp?v=1780382688"
+      ],
+      "rating": 4.3,
+      "stock": 11,
+      "featured": true,
+      "id": "j0xJQ_oLElA"
+    },
+    {
+      "slug": "marquise-curve-huggies",
+      "title": "Marquise Curve Huggies",
+      "category": "Earring",
+      "price": 268000,
+      "description": "Marquise Curve Huggies crafted in 18K yellow gold, featuring two natural marquise-shaped diamonds that bring refined brilliance and timeless elegance to their sleek curved design.",
+      "thumbnail": "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0003copy_16.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0002copy_17_f088aed7-aed4-4971-8a05-12e282ea27fc.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0008copy_4.webp?v=1780904771",
+        "https://cdn.shopify.com/s/files/1/0707/8520/4271/files/IMG_0001copy_30.webp?v=1780904771"
+      ],
+      "rating": 4.5,
+      "stock": 17,
+      "featured": true,
+      "id": "2JqqRl0nLDI"
     }
   ],
   "products": [

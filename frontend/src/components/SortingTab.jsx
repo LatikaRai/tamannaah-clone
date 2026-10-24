@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import { useOutletContext } from "react-router-dom";
 
 const SortingTab = ({
   selectedStatus,
@@ -11,7 +10,7 @@ const SortingTab = ({
   setSelectedSort,
   setSortingTab
 }) => {
-  console.log(selectedCtg)
+
   // for sorting the products
   const sortBy = [
     "Featured",
@@ -48,19 +47,19 @@ const SortingTab = ({
             ease: [0.22, 1, 0.36, 1],
           }}
           exit={{ opacity: 1, x: "100%" }}
-          className='fixed z-100 h-screen w-[35%] top-0 right-0 bg-white text-gray-800 p-[1.4rem] font-["ArboriaBook"] flex flex-col justify-between'
+          className='fixed z-200 h-screen w-full lg:w-[35%] top-0 right-0 bg-white text-gray-800 p-[1.4rem] font-["ArboriaBook"] flex flex-col justify-between'
         >
           <div>
             <div className="flex items-center justify-between border-b pb-[0.8rem] border-gray-200">
-              <h1 className="text-[0.9rem]">Filter & Sort</h1>
-              <i className="ri-close-large-line"></i>
+              <h1 className="text-[1.1rem] lg:text-[0.9rem]">Filter & Sort</h1>
+              <i onClick={()=>setSortingTab(false)} className="ri-close-large-line"></i>
             </div>
             <div className="overflow-auto h-[80vh]">
               {/* sort by tab */}
               <div className="py-[1.2rem] border-b border-gray-200">
                 <div
                   onClick={() => setOpenSort(!openSort)}
-                  className="flex items-center justify-between text-[0.9rem]"
+                  className="flex items-center justify-between text-[0.99rem] lg:text-[0.9rem]"
                 >
                   <h2>Sort By: {selectedSort}</h2>
                   {openSort ? (
@@ -93,7 +92,7 @@ const SortingTab = ({
                           />
                           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[0.42rem] h-[0.38rem] bg-[#939997] scale-0 opacity-0 peer-checked:scale-100 peer-checked:opacity-100 transition-all duration-150 ease-out pointer-events-none"></span>
                         </span>
-                        <h2 className="text-[0.8rem]">{sort}</h2>
+                        <h2 className="text-[0.9rem] lg:text-[0.8rem]">{sort}</h2>
                       </div>
                     ))}
                   </div>
@@ -104,7 +103,7 @@ const SortingTab = ({
               <div className="py-[1.2rem] border-b border-gray-200">
                 <div
                   onClick={() => setOpenStockStatus(!openStockStatus)}
-                  className="flex items-center justify-between text-[0.9rem]"
+                  className="flex items-center justify-between text-[0.99rem] lg:text-[0.9rem]"
                 >
                   <h2>Availability</h2>
                   {openStockStatus ? (
@@ -137,7 +136,7 @@ const SortingTab = ({
                           />
                           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[0.42rem] h-[0.38rem] bg-[#939997] scale-0 opacity-0 peer-checked:scale-100 peer-checked:opacity-100 transition-all duration-150 ease-out pointer-events-none"></span>
                         </span>
-                        <h2 className="text-[0.8rem] capitalize">{status}</h2>
+                        <h2 className="text-[0.9rem] lg:text-[0.8rem] capitalize">{status}</h2>
                       </div>
                     ))}
                   </div>
@@ -148,7 +147,7 @@ const SortingTab = ({
               <div className="py-[1.2rem] border-b border-gray-200">
                 <div
                   onClick={() => setOpenCtg(!openCtg)}
-                  className="flex items-center justify-between text-[0.9rem]"
+                  className="flex items-center justify-between text-[0.99rem] lg:text-[0.9rem]"
                 >
                   <h2>Category</h2>
                   {openCtg ? (
@@ -180,7 +179,7 @@ const SortingTab = ({
                           />
                           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[0.42rem] h-[0.38rem] bg-[#939997] scale-0 opacity-0 peer-checked:scale-100 peer-checked:opacity-100 transition-all duration-150 ease-out pointer-events-none"></span>
                         </span>
-                        <h2 className="text-[0.8rem] capitalize">{ctg}</h2>
+                        <h2 className="text-[0.9rem] lg:text-[0.8rem] capitalize">{ctg}</h2>
                       </div>
                     ))}
                   </div>
@@ -197,11 +196,11 @@ const SortingTab = ({
                 setSelectedCtg([]);
                 console.log("cleared");
               }}
-              className="w-full border uppercase py-[0.49rem] text-[0.85rem] font-semibold hover:bg-black hover:text-white transition-all delay-100"
+              className="w-full border uppercase py-[0.49rem] text-[0.95rem] lg:text-[0.85rem] font-semibold hover:bg-black hover:text-white transition-all delay-100"
             >
               Clear all
             </button>
-            <button onClick={()=>setSortingTab(false)} className="w-full border uppercase py-[0.49rem] text-[0.85rem] font-semibold bg-black text-white">
+            <button onClick={()=>setSortingTab(false)} className="w-full border uppercase py-[0.49rem] text-[0.95rem] lg:text-[0.85rem] font-semibold bg-black text-white">
               View Results
             </button>
           </div>

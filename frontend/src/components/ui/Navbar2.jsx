@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import { motion } from "motion/react";
 
@@ -9,6 +9,8 @@ const Navbar2 = ({ wishlist, cart, activeTab, setActiveTab, showNav }) => {
   const isLightBg = ["/account/login","/account/register","/wishlist","/policies/shipping-policy","/policies/terms-of-service", "/policies/refund-policy","/blogs/news/akshaya-tritiya","/policies/privacy-policy"].includes(location.pathname) || location.pathname.startsWith("/product/");
 
   const navColor = isLightBg ? "text-black bg-white" : "text-white";
+
+  const navigate = useNavigate()
   return (
     <>
     {/* mobile */}
@@ -35,7 +37,10 @@ const Navbar2 = ({ wishlist, cart, activeTab, setActiveTab, showNav }) => {
         <Logo />
       </Link>
       <div className="w-[10%] flex items-center text-[1.05rem] mr-[0.9rem] gap-[1.2rem]">
-            <i className="ri-poker-hearts-line"></i>
+            <i onClick={ () => {              
+              navigate('/wishlist')
+              window.scrollTo(0,0)
+              }} className="ri-poker-hearts-line"></i>
             <i className="ri-shopping-bag-line"></i>
       </div>
     </motion.nav>
