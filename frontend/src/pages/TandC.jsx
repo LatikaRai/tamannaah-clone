@@ -1,7 +1,7 @@
 const TandC = () => {
   return (
-    <div className="w-full font-['ArboriaBook'] text-[0.8rem] mt-[8vh] py-[6.3rem] flex items-center justify-center">
-      <div className="w-[30%] flex flex-col gap-[1.3rem]">
+    <div className="w-full font-['ArboriaBook'] text-[0.8rem] mt-[8vh] p-[0.9rem] lg:px-0 lg:py-[6.3rem] flex items-center justify-center">
+      <div className="lg:w-[30%] flex flex-col gap-[1.3rem]">
         <div className="w-full text-justify flex flex-col pb-[0.9rem] gap-[0.7rem]">
           <h1 className="font-semibold pb-[0.6rem]">TERMS AND CONDITIONS</h1>
           <p className="text-gray-600">

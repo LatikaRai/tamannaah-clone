@@ -93,9 +93,18 @@ const MainFooter = ({setActiveTab}) => {
                 transition={{ duration: 0.2, ease: "easeOut" }}
               >
                 <div className="py-[1.4rem] flex flex-col gap-[0.7rem] text-[0.85rem]">
-                  <h2 className="">About Us</h2>
-                <h2 className="">Our Stores</h2>
-                <h2 className="">Resources</h2>
+                  <h2 onClick={()=>{
+                navigate('/about-us')
+                window.scrollTo(0,0)
+                }}>About Us</h2>
+                <h2 onClick={()=>{
+                navigate('/about-us/our-store')
+                window.scrollTo(0,0)
+            }}>Our Stores</h2>
+                <h2  onClick={()=>{
+                navigate('/blogs/news/akshaya-tritiya')
+                window.scrollTo(0,0)
+            }}>Resources</h2>
                 </div>
               </motion.div>
             </div>
