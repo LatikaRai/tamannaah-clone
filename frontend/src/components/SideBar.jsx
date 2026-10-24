@@ -7,6 +7,11 @@ import Account from "../pages/Account";
 import Cart from "./Cart";
 
 const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
+  const handleNavigate = (path) => {
+    setPendingRoute(path);
+    setActiveTab(null);
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
     {/* left sidebar */}
@@ -41,9 +46,9 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
             {activeTab === 'about' && <AboutTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
             {activeTab === 'search' && <SearchTab setActiveTab={setActiveTab} setPendingRoute={setPendingRoute}/>}
         </div>
-        <div className={`${activeTab === "search" ? "hidden" : "flex"} w-full text-[0.8rem] mt-auto items-center justify-between`}>
+        <div className={`${activeTab === "search" ? "hidden" : "flex"} lg:hidden w-full text-[0.8rem] mt-auto items-center justify-between`}>
           <div onClick={()=>{
-            setActiveTab('account')
+            handleNavigate('/account/login')
           }}>Account</div>
           <div onClick={()=>{
             setActiveTab('contact')

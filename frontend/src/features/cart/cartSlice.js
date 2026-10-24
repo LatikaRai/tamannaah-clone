@@ -22,7 +22,7 @@ const cartSlice = createSlice({
       const product = action.payload;
       const existingProduct = state.cart.find((item) => item.slug === product.slug);
       if (existingProduct) {
-        existingProduct.quantity += 1;
+        existingProduct.quantity = product.quantity;
       }
     },
     // decreasing the quantity
@@ -33,7 +33,7 @@ const cartSlice = createSlice({
         if (existingProduct.quantity === 1) {
           state.cart = state.cart.filter((item) => item.slug !== product.slug);
         } else {
-          existingProduct.quantity -= 1;
+          existingProduct.quantity = product.quantity;
         }
       }
     },
