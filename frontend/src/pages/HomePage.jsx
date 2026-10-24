@@ -8,9 +8,13 @@ const HomePage = () => {
         <div className="w-full  px-[0.9rem] lg:px-0">
           <h1 className="text-[0.83rem] text-center font-semibold pb-[0.9rem]">SIGN UP FOR THE NEWSLETTER</h1>
           <p className="text-[0.84rem] text-center">Sign up to discover new collections, <br />curated edits, events, and more</p>
-          <div className="lg:w-[30vw] w-full pb-[0.6rem] mt-[1.6rem] border-b border-gray-400">
-            <input className="text-[0.8rem] w-full outline-none" type="email" placeholder="Enter Mail Address" />
-          </div>
+          <div className="lg:w-[30vw] w-full mx-auto pb-[0.6rem] mt-[1.6rem] border-b border-gray-400">
+  <input
+    className="text-[0.8rem] w-full outline-none"
+    type="email"
+    placeholder="Enter Mail Address"
+  />
+</div>
         </div>
       </div>
     </div>

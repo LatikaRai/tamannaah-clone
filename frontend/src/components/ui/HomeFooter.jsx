@@ -12,9 +12,9 @@ const HomeFooter = ({ setActiveTab }) => {
   return (
     <>
       {/* for mobile */}
-      <div className="font-['ArboriaBook']">
+      <div className="lg:hidden font-['ArboriaBook']">
         <div
-        className='lg:hidden w-full bg-white text-gray-800 p-[0.9rem] flex flex-col justify-between'
+        className='w-full bg-white text-gray-800 p-[0.9rem] flex flex-col justify-between'
       >
         <div>
           <div className="">
