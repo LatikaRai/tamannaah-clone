@@ -37,12 +37,12 @@ const Cart = ({ setActiveTab }) => {
   }
 
   return (
-    <div className="w-full h-screen pr-[1.3rem] text-[0.9rem] overflow-y-auto">
-      <div className="w-full h-[6vh] flex items-center justify-between pb-[1.2rem] px-[1.4rem] border-b border-gray-300">
+    <div className="w-full h-screen lg:pr-[1.3rem] text-[0.9rem] overflow-y-auto">
+      <div className="w-full h-[6vh] flex items-center justify-between pb-[1.2rem] p-[0.9rem] lg:px-[1.4rem] border-b border-gray-300">
         <h1>My Bag</h1>
         <i onClick={() => setActiveTab("")} className="ri-close-line"></i>
       </div>
-      <div className="py-[1.6rem] px-[1.4rem]">
+      <div className="py-[1.6rem] px-[0.9rem] lg:px-[1.4rem]">
         {cart.length === 0 ? (
           <div className="flex flex-col gap-[2.4rem] py-[1.1rem]">
             <span>Your cart is empty</span>
@@ -54,7 +54,7 @@ const Cart = ({ setActiveTab }) => {
             </button>
           </div>
         ) : (
-          <div className="w-full h-[85vh] flex flex-col justify-between">
+          <div className="w-full h-full lg:h-[85vh] flex flex-col">
             <div className="w-full overflow-y-auto no-scrollbar">
             {cart.map((product) => (
               <div
@@ -100,7 +100,7 @@ const Cart = ({ setActiveTab }) => {
               </div>
             ))}
           </div>
-          <div className="w-full h-[15vh] py-[1.1rem] flex flex-col gap-[1.1rem] border-t border-gray-300">
+          <div className="w-full shrink-0 py-[1.1rem] flex flex-col gap-[1.1rem] border-t border-gray-300">
             <div className="w-full flex items-center justify-between font-semibold text-[0.85rem]">
               <h2 className="uppercase">Total</h2>
               <h2>₹{totalPrice()}</h2>

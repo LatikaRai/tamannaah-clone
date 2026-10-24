@@ -83,8 +83,24 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
       {/* right sidebar */}
     <>
     {['contact','cart'].includes(activeTab) &&
-      <div
-      className='lg:hidden fixed h-screen w-[85%] top-0 left-0 bg-white z-150 text-gray-800 font-["ArboriaBook"]'
+      <motion.div
+      key={activeTab}
+      initial={
+        activeTab === "cart"
+          ? { y: "100%", opacity: 1 }
+          : { x: "-100%", opacity: 1 }
+      }
+      animate={{ x: 0, y: 0, opacity: 1 }}
+      exit={
+        activeTab === "cart"
+          ? { y: "100%", opacity: 1 }
+          : { x: "-100%", opacity: 1 }
+      }
+      transition={{
+        duration: 0.5,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className={`${activeTab === 'cart' ? 'w-full h-[70vh] bottom-0 top-auto overflow-y-auto': 'w-[85%] h-screen '} lg:hidden fixed top-0 left-0 bg-white z-150 text-gray-800 font-["ArboriaBook"]`}
       >
           <div className="flex gap-[2.6rem] cursor-pointer text-[0.9rem]">
           </div>
@@ -92,7 +108,7 @@ const SideBar = ({activeTab, setActiveTab, setPendingRoute}) => {
               {activeTab === 'contact' && <ContactTab setActiveTab={setActiveTab} />}
               {activeTab === 'cart' && <Cart setActiveTab={setActiveTab} />}
           </div>
-      </div>
+      </motion.div>
     }
     <div>
       {activeTab === 'account' && <Account/>}

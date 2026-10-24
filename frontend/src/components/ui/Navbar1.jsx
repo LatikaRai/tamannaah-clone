@@ -146,7 +146,7 @@ const Navbar1 = ({
               navigate('/wishlist')
               window.scrollTo(0,0)
               }} className="ri-poker-hearts-line"></i>
-            <i className="ri-shopping-bag-line"></i>
+            <i onClick={() => setActiveTab("cart")} className="ri-shopping-bag-line"></i>
           </div>
       </motion.div>
     </nav>
