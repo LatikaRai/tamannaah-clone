@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   const createAccountHandler = () => {
-    navigate("/register");
+    navigate("/account/register");
   };
 
   return (
